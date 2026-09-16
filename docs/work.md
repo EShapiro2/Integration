@@ -4,7 +4,7 @@ One line per item: origin (inbox and `Date`), owner, branch, state (requested, f
 
 ## Worktrees
 
-Created 2026-09-16 at GLP `7dde3845`, one per project with an active Code session; each branch is pushed and tracks `origin/<project>`.  A project not listed has none and asks for one.
+Created 2026-09-16, one per project with an active Code session; each branch is pushed and tracks `origin/<project>`.  A project not listed has none and asks for one.  The first five were cut at GLP `7dde3845`; GFWC at `c52f6545`, after the harness fix and the Currencies merge (GFWC #1 Cowork, `Integration_inbox.md` 2026-09-16 21:05 UTC).
 
 | Project | Worktree | Branch |
 |---|---|---|
@@ -13,10 +13,14 @@ Created 2026-09-16 at GLP `7dde3845`, one per project with an active Code sessio
 | Currencies | `/Users/udi/Grassroots/GLP-worktrees/Currencies` | `Currencies` |
 | vGLP | `/Users/udi/Grassroots/GLP-worktrees/vGLP` | `vGLP` |
 | GLP-Networking-API | `/Users/udi/Grassroots/GLP-worktrees/GLP-Networking-API` | `GLP-Networking-API` |
+| GFWC | `/Users/udi/Grassroots/GLP-worktrees/GFWC` | `GFWC` |
 
 The two worktrees of an earlier session under `/Users/udi/Grassroots/tmp/` --- `glp-bundle` and `glp-gate` --- were removed on 2026-09-16, both superseded.
 
 ## Items
 
-- **Reorganisation of the GLP tree** (Udi, 2026-09-16, ruled in discussion with Integration #1 Cowork; task in `Integration_inbox.md` 2026-09-16 10:28 UTC).  Owner: Integration; on `main`, before any worktree.  Deletions of stale and archived material; `programs/spm` to `programs/social/spm`; `programs/currencies` a container holding `bonds_v2`, `coins`, `bonds`, `sovereign`; test fixtures under `programs/tests/`; `glp_multiagent/assets/glp` generated; branches, remote and worktrees pruned; `README.md` and `CLAUDE.md` rewritten; then the five worktrees.  Owners told 2026-09-16 10:28 UTC.  State: DONE at GLP `7dde3845`, suite 1803 green, pushed.  Step 4 completed 2026-09-16 (Udi): the two stale worktrees removed, 18 local branches and 85 remote refs deleted, the `art-of-glp` remote removed; `origin` holds 18 heads.  Record in `docs/branch-record-2026-09-16.md`.
-- **SGC screens appendix** (Currencies Cowork, `Currencies_inbox.md` 2026-09-15 10:45 UTC; opened before Integration existed, in four inboxes).  Owners: Currencies (mini-app entry, done at GLP `a6bac767`), IGLP (bundle and `.glpw` as bytes, done at `be72af8a`, `9f2214a0`; the five widget names, done), vGLP (`date` widget named in the paper, done), GSG (host's fourth `deliver/10` pair, done at `e3d2ec33`).  Left: the eight simulator screens into `/Grassroots/SGC/Figs/`, Currencies Code; and the coins else-branch removal, Currencies, ruled by Udi 2026-09-15 to be done before the 24th.  State: waiting on the reorganisation and the Currencies worktree.
+- **Harness: Section Q silent skip** (found by Integration #1 Code, 2026-09-16, in the worktrees).  Owner: Integration.  `flutter test` in a worktree without the generated `assets/glp` fails to build, prints no count, and Section Q scores 0/0 as a pass, so a worktree suite understates by 60 and reports green.  Fix: Section Q fails hard on no count; the harness runs `sync_glp_assets.sh` before Section Q.  Task: `Integration_inbox.md` 2026-09-16 21:10 UTC item 1.  State: in progress, Integration Code.
+- **Coins else-branch removal** (Udi, 2026-09-15; Currencies #1 Code, `Integration_inbox.md` 2026-09-16 17:46 UTC).  Owner: Currencies; branch `Currencies`, `fbbdafbe` + `79941ca5` on `7dde3845`, branch suite 1742 green.  State: merge requested; Integration Code merges after the harness fix (task 21:10 UTC item 2).
+- **Denominated mini-app in the iOS bundle** (Currencies #1 Code, `Integration_inbox.md` 2026-09-16 17:48 UTC).  Owner: IGLP (`sync_glp_assets.sh`, `glp_sources.dart`, Appendix B); forwarded to `IGLP_inbox.md` 2026-09-16 21:10 UTC.  Blocking the SGC screens.  State: forwarded; waiting on IGLP Code, then merge, then Currencies merging `main`.
+- **GFWC worktree** (GFWC #1 Cowork, `Integration_inbox.md` 2026-09-16 21:05 UTC).  Owner: Integration.  State: requested; Integration Code creates it (task 21:10 UTC item 3).
+- **SGC screens appendix** (Currencies Cowork, `Currencies_inbox.md` 2026-09-15 10:45 UTC).  Owners: Currencies (mini-app entry, done at GLP `a6bac767`; else-branch removal, above), IGLP (bundle and `.glpw` as bytes, done at `be72af8a`, `9f2214a0`; the five widget names, done; the denominated artefact in the bundle, above), vGLP (`date` widget named in the paper, done), GSG (host's fourth `deliver/10` pair, done at `e3d2ec33`).  Left: the eight simulator screens into `/Grassroots/SGC/Figs/`, Currencies Code, transcript written 2026-09-16.  State: waiting on the bundle item.
