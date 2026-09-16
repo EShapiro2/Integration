@@ -1,8 +1,10 @@
 # GLP branch and remote record, 2026-09-16
 
-Taken by Integration #1 Code at GLP `7dde3845` before the step 4 deletions of the reorganisation series.  Every ref below is recoverable by its SHA.  The deletions are NOT done: the session's tool permissions refuse `git branch -D`, `git push origin --delete`, `git worktree remove` and `git remote remove`, and Udi has been asked.
+Taken by Integration #1 Code at GLP `7dde3845` before the step 4 deletions of the reorganisation series.  Every ref below is recoverable by its SHA.
 
-## Local branches, all but `main` (18)
+**The deletions were carried out on 2026-09-16 (Udi).**  18 local branches deleted; 85 remote refs deleted --- 84 `origin/claude/*` and `origin/cart`.  The record below lists 86 because `origin/claude/revise-paper-Az0EC` was a stale remote-tracking ref that the remote no longer had; `origin/overleaf-2025-12-01-1312` was stale in the same way and was pruned rather than deleted, which is why it is not in the list below and is gone all the same.  `origin` then held 18 heads: `main`, the five worktree branches, Ohad's three, and `feat/add_android_scaffolding`, `map_impl`, `pointer-architecture`, `shared`, `single-id-migration`, `subtyping`, `unfriend-main-update`, `vm-claude-integration`, `vm-v216-core`, which the task kept.  The `art-of-glp` remote was removed and both worktrees under `/Grassroots/tmp/` were removed.
+
+## Local branches deleted, all but `main` (18)
 
 ```
 claude/error-handling-fixes | a72e2189bc1383f20be745f4c87c58ddb17d28fe | 2026-04-09 | Add error handling: rv_agent rejected verify, fmrv unknown-peer via AddrResult
@@ -25,7 +27,7 @@ vm-claude-integration | 0af4d64d825a320911747a10690c395758f05cf3 | 2025-11-11 | 
 vm-v216-core | ffb85927a845b3e458fdaedc66aff740089d7e73 | 2025-10-19 | v2.16 VM: minimal interpreter + unit tests (unit goals/clauses, σ̂w commit, suspend after scan)
 ```
 
-## Remote refs: `origin/claude/*` and `origin/cart` (86)
+## Remote refs recorded (86; 85 deleted, one already gone from the remote)
 
 ```
 origin/cart | 0c59966e9d428f371cc740c53b68ef6b4f3f485b | 2026-03-01 | Update map spec for O(1) in-place mutation + add user guide
@@ -116,12 +118,12 @@ origin/claude/update-flutter-macos-q0BlJ | 6e7aa0687749e6213a98b3b12501f840db921
 origin/claude/upgrading-arithmetic-01FVyZTCRyp2Guj1EcGtnr8u | d388d510a31766b09b1f0bedad8147e085a3061f | 2025-11-21 | Update specifications to reference comprehensive arithmetic system
 ```
 
-## Remote to be removed
+## Remote removed
 
 ```
 art-of-glp  git@github.com:EShapiro2/Art-of-GLP-2025.git
 ```
 
-## Worktrees to be removed
+## Worktrees removed
 
 `/Users/udi/Grassroots/tmp/glp-bundle` at `df1d8825` and `/Users/udi/Grassroots/tmp/glp-gate` at `0c15a0f9`.  Both carry uncommitted files; every one of them is byte-identical to `main` or older than it, and `df1d8825` is an ancestor of `main`, so neither holds anything unique.  Their diffs are at `/Users/udi/Grassroots/tmp/glp-{gate,bundle}-uncommitted.diff`.
