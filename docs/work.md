@@ -4,7 +4,7 @@ One line per item: origin (inbox and `Date`), owner, branch, state (requested, f
 
 ## Worktrees
 
-Created 2026-09-16, one per project with an active Code session; each branch is pushed and tracks `origin/<project>`.  A project not listed has none and asks for one.  The first five were cut at GLP `7dde3845`; GFWC at `c52f6545`, after the harness fix and the Currencies merge (GFWC #1 Cowork, `Integration_inbox.md` 2026-09-16 21:05 UTC).
+Created 2026-09-16, one per project with an active Code session; each branch is pushed and tracks `origin/<project>`.  A project not listed has none and asks for one.  The first five were cut at GLP `7dde3845`; GFWC at `c52f6545`, after the harness fix and the Currencies merge (GFWC #1 Cowork, `Integration_inbox.md` 2026-09-16 21:05 UTC).  Legal at `0c9635ef` on 2026-09-18, for its `programs/jurix` task (Legal Cowork, `Integration_inbox.md` 2026-09-18 11:27 UTC); it had none before, having had no code session when the others were cut.
 
 | Project | Worktree | Branch |
 |---|---|---|
@@ -14,6 +14,7 @@ Created 2026-09-16, one per project with an active Code session; each branch is 
 | vGLP | `/Users/udi/Grassroots/GLP-worktrees/vGLP` | `vGLP` |
 | GLP-Networking-API | `/Users/udi/Grassroots/GLP-worktrees/GLP-Networking-API` | `GLP-Networking-API` |
 | GFWC | `/Users/udi/Grassroots/GLP-worktrees/GFWC` | `GFWC` |
+| Legal | `/Users/udi/Grassroots/GLP-worktrees/Legal` | `Legal` |
 
 The two worktrees of an earlier session under `/Users/udi/Grassroots/tmp/` --- `glp-bundle` and `glp-gate` --- were removed on 2026-09-16, both superseded.
 
