@@ -2,7 +2,7 @@
 
 ## Identity
 
-Directory `/Users/udi/Grassroots/Integration`; remote `git@github.com:EShapiro2/Integration.git`; inbox `Integration_inbox.md`.  Created 2026-09-16 (Udi).  Grassroots Integration owns the GLP repository, `/Users/udi/Grassroots/GLP`, as a whole: `main`, the directory layout, the suite harness (`test/run_all_tests.sh` and `KNOWN_RED`), the gate, the worktrees, and every merge — the code of every abstraction of the cascade, as one tree.  It owns no paper, no specification and no paper-owned directory; ownership of directories is Coordination Appendix B and does not change.
+Directory `/Users/udi/Grassroots/Integration`; remote `git@github.com:EShapiro2/Integration.git`; inboxes `Integration_inbox.md` (Cowork) and `Integration-Code_inbox.md` (Code).  Created 2026-09-16 (Udi).  Grassroots Integration owns the GLP repository, `/Users/udi/Grassroots/GLP`, as a whole: `main`, the directory layout, the suite harness (`test/run_all_tests.sh` and `KNOWN_RED`), the gate, the worktrees, and every merge — the code of every abstraction of the cascade, as one tree.  It owns no paper, no specification and no paper-owned directory; ownership of directories is Coordination Appendix B and does not change.
 
 ## What Integration does
 
@@ -19,12 +19,12 @@ Directory `/Users/udi/Grassroots/Integration`; remote `git@github.com:EShapiro2/
 
 ## Sessions
 
-- **Cowork** reads at start: `claude.md`, this file, `to_all_inbox.md`, its own inbox from its last receipt, and `docs/work.md`.  It triages the inbox, writes forwards and rejections, keeps `docs/work.md` current, and writes Integration Code's own tasks --- merges, worktrees, moves, the harness --- into `Integration_inbox.md`.
-- **Code** reads at start: `claude.md`, this file, `/Grassroots/GLP/CLAUDE.md`, `to_all_inbox.md`, and its own inbox from its last receipt.  It is the only session that commits to `main`, working in `/Users/udi/Grassroots/GLP`; every other commit is made by one of its subagents in that project's worktree.  🔴 It is the one session that polls: between tasks it re-reads `Integration_inbox.md` from its last receipt, so that a task an owner's Cowork wrote reaches it without Udi carrying the message.  Udi talks to it about all code; he talks to a Cowork session about its paper.
+- **Cowork** reads at start: `claude.md`, this file, `to_all_inbox.md`, its own inbox from its last receipt, and `docs/work.md`.  It triages the inbox, writes forwards and rejections, keeps `docs/work.md` current, and writes Integration Code's own tasks --- merges, worktrees, moves, the harness --- into `Integration-Code_inbox.md`.
+- **Code** reads at start: `claude.md`, this file, `/Grassroots/GLP/CLAUDE.md`, `to_all_inbox.md`, and its own inbox from its last receipt.  It is the only session that commits to `main`, working in `/Users/udi/Grassroots/GLP`; every other commit is made by one of its subagents in that project's worktree.  🔴 It is the one session that polls: between tasks it re-reads `Integration-Code_inbox.md` from its last receipt, so that a task an owner's Cowork wrote reaches it without Udi carrying the message.  Udi talks to it about all code; he talks to a Cowork session about its paper.
 
 ## The ten-minute check
 
-🔴 **Both Integration sessions set up a ten-minute mail check at startup, as a step of starting** (Udi, 2026-09-18).  Schedule a wake into your own session --- not a fresh one per firing --- that reads `Integration_inbox.md` from your last receipt forward, acts on what is there, and arms the next one ten minutes on.  Stop arming it when the inbox is empty and nothing is in flight, and say so in one line.
+🔴 **Both Integration sessions set up a ten-minute mail check at startup, as a step of starting** (Udi, 2026-09-18).  Schedule a wake into your own session --- not a fresh one per firing --- that reads your own inbox from your last receipt forward, acts on what is there, and arms the next one ten minutes on.  Stop arming it when the inbox is empty and nothing is in flight, and say so in one line.
 
 The reason it is these two sessions and not every session: a task written into this inbox is dead until Integration reads it, so everyone else waits on the reading.  A paper's Cowork waits on nobody and reads its mail when it is told to, as `claude.md` says.  Ten minutes rather than a few: every wake costs tokens whether or not there is mail.
 
