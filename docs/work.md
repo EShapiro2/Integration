@@ -4,24 +4,25 @@ One line per item: origin (inbox and `Date`), owner, branch, state (requested, f
 
 ## Worktrees
 
-Created 2026-09-16, one per project with an active Code session; each branch is pushed and tracks `origin/<project>`.  A project not listed has none and asks for one.  The first five were cut at GLP `7dde3845`; GFWC at `c52f6545`, after the harness fix and the Currencies merge (GFWC #1 Cowork, `Integration_inbox.md` 2026-09-16 21:05 UTC).  Legal at `0c9635ef` on 2026-09-18, for its `programs/jurix` task (Legal Cowork, `Integration_inbox.md` 2026-09-18 11:27 UTC); it had none before, having had no code session when the others were cut.  GLP-Spec on 2026-09-18 by Integration #2 Code, for its root `self.glp` task.  `IGLP-manifest`, Integration's branch carrying the sovereign manifest apart from the refusal, was cut 18:06 UTC, merged at `f5aa77f9` and retired.  `IGLP-harness` and `IGLP-display`, off `main` at `fd0dd7e6`, each carry one IGLP task that must not sit on `IGLP`, which holds the refusal (Code, 2026-09-18).
+Created 2026-09-16, one per project with an active Code session; each branch is pushed and tracks `origin/<project>`.  A project not listed has none and asks for one.  The first five were cut at GLP `7dde3845`; GFWC at `c52f6545`, after the harness fix and the Currencies merge (GFWC #1 Cowork, `Integration_inbox.md` 2026-09-16 21:05 UTC).  Legal at `0c9635ef` on 2026-09-18, for its `programs/jurix` task (Legal Cowork, `Integration_inbox.md` 2026-09-18 11:27 UTC); it had none before, having had no code session when the others were cut.  GLP-Spec on 2026-09-18 by Integration #2 Code, for its root `self.glp` task.  🔴 GLP-SPEC AND IGLP ARE ONE PROJECT, GLP (Udi, 2026-09-20; Coordination #2 Cowork, 10:55 and 10:59 UTC): the Project column below reads GLP where it read IGLP or GLP-Spec, a code task arrives `To: Integration Code, for GLP`, the mail is `GLP_inbox.md`, and there is no longer a request between the two to forward.  NOTHING IS CONSOLIDATED --- the per-task worktrees stand as they are (Coordination's correction of 10:59 UTC), and the tree is Integration's in any case.  `IGLP-manifest`, Integration's branch carrying the sovereign manifest apart from the refusal, was cut 18:06 UTC, merged at `f5aa77f9` and retired.  `IGLP-harness` and `IGLP-display`, off `main` at `fd0dd7e6`, each carry one IGLP task that must not sit on `IGLP`, which holds the refusal (Code, 2026-09-18).
 
 | Project | Worktree | Branch |
 |---|---|---|
-| IGLP | `/Users/udi/Grassroots/GLP-worktrees/IGLP` | `IGLP` |
+| GLP (the load path) | `/Users/udi/Grassroots/GLP-worktrees/IGLP` | `IGLP` |
 | GSG | `/Users/udi/Grassroots/GLP-worktrees/GSG` | `GSG` |
 | Currencies | `/Users/udi/Grassroots/GLP-worktrees/Currencies` | `Currencies` |
 | vGLP | `/Users/udi/Grassroots/GLP-worktrees/vGLP` | `vGLP` |
 | GLP-Networking-API | `/Users/udi/Grassroots/GLP-worktrees/GLP-Networking-API` | `GLP-Networking-API` |
 | GFWC | `/Users/udi/Grassroots/GLP-worktrees/GFWC` | `GFWC` |
 | Legal | `/Users/udi/Grassroots/GLP-worktrees/Legal` | `Legal` |
-| GLP-Spec | `/Users/udi/Grassroots/GLP-worktrees/GLP-Spec` | `GLP-Spec` |
-| IGLP (the harness path) | `/Users/udi/Grassroots/GLP-worktrees/IGLP-harness` | `IGLP-harness` |
-| IGLP (compounds as scalars) | `/Users/udi/Grassroots/GLP-worktrees/IGLP-display` | `IGLP-display` |
+| GLP (the root `self.glp`) | `/Users/udi/Grassroots/GLP-worktrees/GLP-Spec` | `GLP-Spec` |
+| GLP (the harness path) | `/Users/udi/Grassroots/GLP-worktrees/IGLP-harness` | `IGLP-harness` |
+| GLP (compounds as scalars) | `/Users/udi/Grassroots/GLP-worktrees/IGLP-display` | `IGLP-display` |
 | Currencies (the twelve `mad_boot` repairs) | `/Users/udi/Grassroots/GLP-worktrees/Currencies-bonds-boot` | `Currencies-bonds-boot` |
-| IGLP (the two checker faults) | `/Users/udi/Grassroots/GLP-worktrees/IGLP-checker` | `IGLP-checker` |
-| IGLP (`main_sovereign.dart`'s boot person) | `/Users/udi/Grassroots/GLP-worktrees/IGLP-sovereign-boot` | `IGLP-sovereign-boot` |
-| IGLP (`signature/2`, the kernel and the probe) | `/Users/udi/Grassroots/GLP-worktrees/IGLP-signature` | `IGLP-signature` |
+| GLP (the two checker faults) | `/Users/udi/Grassroots/GLP-worktrees/IGLP-checker` | `IGLP-checker` |
+| GLP (`main_sovereign.dart`'s boot person) | `/Users/udi/Grassroots/GLP-worktrees/IGLP-sovereign-boot` | `IGLP-sovereign-boot` |
+| GLP (`signature/2`, the kernel and the probe) | `/Users/udi/Grassroots/GLP-worktrees/IGLP-signature` | `IGLP-signature` |
+| GLP (the `Key` mirror, `load_test`) | `/Users/udi/Grassroots/GLP-worktrees/IGLP-key` | `IGLP-key` |
 
 Since 2026-09-18 18:44 UTC (Udi) independent tasks run concurrently, one subagent per worktree, and ready branches merge in batches with one suite run per batch; the suite is still one at a time on `main`.  `Currencies-bonds-boot` was cut off `main` because the `Currencies` worktree was taken and the twelve merge with the refusal.
 
@@ -31,9 +32,9 @@ The two worktrees of an earlier session under `/Users/udi/Grassroots/tmp/` --- `
 
 Open only; a merged or rejected item leaves the list, git holding it.  Brought current 2026-09-19 08:30 UTC by Integration #2 Cowork from Integration #2 Code's reports of 2026-09-18 19:16 UTC to 2026-09-19; the mail is authoritative where the two differ.
 
-### The tree, 2026-09-19 morning
+### The tree, 2026-09-20 13:24 UTC
 
-`origin/main` is `52a60b26`: suite 2071 green at `94d9980e`, `KNOWN_RED` empty, fourteen merges on 2026-09-18 each under its own suite run.  🔴 THE CLONE'S LOCAL `main` IS ONE BATCH AHEAD OF ORIGIN, at `0a6cf125`, unpushed: stage B of the `signature/2` work (below), 2078 green and 1 red.  Every branch in it is pushed, so nothing is lost; the next Code session starts by knowing this.  Worktrees `IGLP-harness`, `IGLP-display`, `IGLP-sovereign-boot`, `IGLP-checker`, `IGLP-key`, `GFWC`, `Legal` and `Currencies` are merged and removable.
+`main` is `10893053`, local and origin the same: stage B of `signature/2` is in --- the root types and wrapper, the kernel, GSG's five converted sites --- with the fixture line at `0e87221d`, and the clone is no longer ahead of origin.  The last recorded suite count is 2071 green at `94d9980e`, `KNOWN_RED` empty; the stage-B merge's own count is Integration #3 Code's to record.  Worktrees `IGLP-harness`, `IGLP-display`, `IGLP-sovereign-boot`, `IGLP-checker`, `IGLP-key`, `IGLP-signature`, `GLP-Spec`, `GFWC`, `Legal` and `Currencies` are merged and removable.
 
 ### The SGC screens, FC 2027 on 24 September
 
@@ -42,9 +43,9 @@ Merged on `origin/main`: the re-emission, GSG's structural copy, both manifests,
 - **Two app findings, IGLP's** (Integration #2 Code to IGLP, 2026-09-18, with `79e88150`'s count).  The app's runtime makes one drain of 1000 goals per tap and never loops, and its status cannot tell a capped drain from a quiescent one, so on the app the paper's acts 3 and 4 do not happen after the Swap until the next tap; and the balances view still keys on two-place items, so a sovereign lot yields no row --- the decision IGLP answered 2026-09-18 17:55 UTC was never followed by a task.  Both bear on the 24th.  State: with IGLP Cowork, to task.
 - **SGC screens appendix** (Currencies Cowork, `Currencies_inbox.md` 2026-09-15 10:45 UTC).  The eight simulator screens into `/Grassroots/SGC/Figs/`, after the two findings above.  Transcript written; `Figs/` does not exist yet.
 
-### `signature/2` --- stage B, held on one line
+### `signature/2` --- merged
 
-- **Stage B** (GLP-Spec's root types `c29905b8` and `signature/2` wrapper `29621df5`; IGLP's `'_signature'/2` kernel `01c25132`; GSG's five sites converted at `0a6cf125` with four forgery plays, Section SG 114/0).  The wrapper deletes `signed/4`, so the three merge only together with GSG's conversion --- Code's rule from the red run: a branch that deletes a predicate merges with its callers' conversion, never ahead of it.  Merged on local `main` at `0a6cf125`, suite 2078 green, 1 red: `glp_multiagent/test/vglp/load_test.dart:251`, the emit fixture's `Note ::= msg(Constant, Constant)` against GLP-Spec's `NetMsg ::= msg(Key, _)`; IGLP's Dart, one line, recommended to them as `msg(Key, Constant)`.  The batch pushes the moment it lands.  State: with IGLP Cowork.  Also with GLP-Spec: `valid_attestation` still declared in the root though the catalogue dropped it.
+- **Stage B** (GLP-Spec's root types `c29905b8` and `signature/2` wrapper `29621df5`; IGLP's `'_signature'/2` kernel `01c25132`; GSG's five sites converted at `0a6cf125` with four forgery plays, Section SG 114/0).  The wrapper deletes `signed/4`, so the three merge only together with GSG's conversion --- Code's rule from the red run: a branch that deletes a predicate merges with its callers' conversion, never ahead of it.  MERGED and pushed, `main` at `10893053`: the fixture line and the volition type it made stale went in at `0e87221d`, `load_test.dart` 13/13.  Leaves the list.  What came out of it and is open: Udi removed `valid_attestation/4` (GLP, 2026-09-20 11:53 UTC), and its one caller, `examples/rendezvous/rv_agent.glp:77`, is GLP-Networking-API's port --- routed to them 13:24 UTC, blocking, and the two merge together.
 
 ### One object checked and compiled --- the refusal, held
 
@@ -61,6 +62,15 @@ Stage A merged at `94d9980e`: GSG's fourteen lines (`da443bd8`), IGLP's `agent_r
 - **GSG, three sites rejected and left as they were**: `Id`, the agent's own key, read at `Key?` and `Constant?` within one head, because `UserInMsg`'s sender slot and the two `ack(Constant)` handshakes hold an agent and were not in the twelve; recommended to GSG that they follow the same sentence, with the now-false workaround note at `self.glp:120--124` and the six `String`-for-`Key`/`Hash` definitions it explains retired in one step.  State: with GSG Cowork.
 - **Currencies, two stops**: `friend_output` waits on GSG's routing taking `Key?`; and the eleven issuer sites of `Coin`, `Bond`, `Lot` and `Warranty` (Udi, 2026-09-18: the issuer follows) cannot be narrowed without a sweep through the helpers, the certified agents' `Id`, `person.glp`, `escrow.glp` and the plays, three emissions moving, which the amendment forbade; recommended back to Currencies as a task naming that scope.  State: with Currencies Cowork.
 - **GSG, a fifth refusal-sibling site**: `home.vglp`'s `respond_friend`, the one that is compiled, carries the `display *(no, ...)` line vGLP ruled an error, and is what `superapp_ui.dart` keys on by number; recommended as GSG's next task.  Nothing renumbered in the four-sibling task because `agent.vglp` and `grassapp_agent.vglp` are exhibits and the deployed `.glp` are hand-written.  State: with GSG Cowork.
+
+### Language and conformance work, 2026-09-20
+
+- **A constructed argument instantiates a type parameter** (Udi, 2026-09-20; TGLP `fbd9040`, superseded by GLP's Definition (Instantiation), 12:55 UTC).  The parameter is not read off one argument: it is whatever makes the caller's clause and the callee's clauses well-typed, so the binding comes from the equations and the term's type stays as a check.  `well_typed_clause.dart`'s `_inferConcreteDecl` is the site.  GLP's task, with Integration Code.
+- **The routing declarations name no parameter list** (GLP, `Integration_inbox.md` 2026-09-20 11:38 UTC).  `routing/output.glp` 12, 19, 26, 34, 42, 50, `inject.glp` 11, `befriend.glp` 36, 44, `intro.glp` 13, 19: `M`, `Ent`, `R`, `S`, `C`, `IR` are undefined type names today, which TGLP rejects whatever the instantiation fix does.  GSG's under Appendix B, routed 13:24 UTC.  State: with GSG Cowork.
+- **A `Constant?` reader where a `Key?` is declared** (GLP, 2026-09-20 11:57 UTC): conformance, no ruling needed, three negative tests and one positive.  GLP's task, with Integration Code.
+- **A message's display takes `label(L)`, its functor the default** (GLP, 2026-09-20 11:56 UTC), conformance with vGLP's specification.  With Integration Code.
+- **A procedure declaration takes its question parameters** (Udi, 2026-09-20; vGLP Section 4, their 12:46 and 12:47 UTC).  `procedure p(...) *(X1, ..., Xm).` in nine `.vglp` sources, then re-emitted; it waits on GLP's checker and compiler taking the form.  Routed 13:24 UTC to GSG (four sources) and Currencies (three); `tests/vglp/one_clause/responder.vglp` is GLP's own, and CSSN's two wait until CSSN wakes.  Non-blocking.
+- **The coins derivation is level with the code** (vGLP, 2026-09-20 11:12 UTC).  Nothing follows for Integration.
 
 ### Findings with owners, none blocking
 
