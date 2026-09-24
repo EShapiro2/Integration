@@ -69,6 +69,30 @@ Stage A merged at `94d9980e`: GSG's fourteen lines (`da443bd8`), IGLP's `agent_r
 - **It does not merge, on three things, all GLP's and all in `GLP_inbox.md`**: the subtype case of the instantiation ruling --- a constructed argument carries one alternative of the union a variable carries, while `def:well-typed-clause` 3(a) asks the instantiated head pair be dual; a held end having no SRSW relaxation, which ten link probes hold on purpose and neither `_?` nor `_` replaces; and which theta a checker takes when several are instantiations.
 - **Ruled by Integration Cowork, 2026-09-20 13:32 UTC**: Code merges `IGLP` into local `main` and runs the suite once to measure the true red list by owner, not pushing a red `main`; and the four regenerated compiled `.glp` files --- three in Currencies' directories, one in GSG's, 23 lines of `Med` -> `_` --- stay on the branch, a generated artifact following the compiler that makes it, no owner's `.vglp` touched.  Currencies and GSG are told with the merge, not asked first.  What the measurement already shows: coins, bonds and sovereign pass the type check and stop on SRSW violations in Currencies' own sources, `cssn` on five GSG routing declarations, ten link probes on the held end.
 
+### The tree, 2026-09-24 08:06 UTC --- nine branches, none merged
+
+From Integration #3 Code's handover of 2026-09-24 07:54 UTC, written at Udi's word before a model upgrade.
+
+🔴 **The clone's `main` is `8f6bcf6a`, one merge ahead of `origin/main` (`10893053`, green, 2079 passed), and that merge is RED BY DESIGN and NOT TO BE PUSHED** --- it was made to measure, on my ruling of 2026-09-20 13:32 UTC, and is now three days stale.  `GLP/CLAUDE.md`'s worktree table is stale with it and is corrected in the same step that makes `main` green.
+
+| branch | head | what it is |
+|---|---|---|
+| `IGLP` | `fdd73610` | the load path entire, and the manual pointing at the paper |
+| `IGLP-ground` | `818df0eb` | the constant-type relaxation replacing `analyzer.dart`'s five-name list; condition 3(b) with the guard meet; `MutualRef` a primitive |
+| `IGLP-runner` | `e2df1ec3` | `unify_void` leaves a fresh unbound writer |
+| `IGLP-qparams` | `ac2f4da6` | question parameters, parser to compiler.  HELD at Currencies' request of 2026-09-23 20:42 UTC, so each agent is edited once |
+| `IGLP-declparams` | `214a50cd` | "Declaration parameters", lifted off `IGLP` 2026-09-23 |
+| `IGLP-linker` | `699d025f` | on `IGLP-declparams`: the linker carries a declaration's parameter list; the `-expose` scope fix |
+| `GSG-declparams` | `470a808e` | GSG's sixteen routing declarations --- took 0 of 108 directories back to 47 |
+| `IGLP-sovereign-boot` | `4774925a` | the balances view rendering a four-place lot; the drain running to quiescence; the village screens test |
+| `vGLP-mediator` | `efde1d93` | `aborted(ReqId)` distinct from `closed(ReqId)`, the three scripted persons, four re-emissions |
+
+**What is left, and it is Integration Code's**: merge the nine in dependency order, one suite run at a time on `main`, re-measure both trees against `/Users/udi/Grassroots/tmp/redlist_8f6bcf6a.txt` and `redlist_base_10893053.txt` so the lists stay comparable, push, and route the residue.
+
+**Delivered to a paper**: `GC/Figs/village-market-coins.png` at GC `75c5a8d`, pushed --- six villagers' screens, balances exactly Currencies' list of 2026-09-20 12:44 UTC, the image opened and checked.  A re-shoot with the SCREEN column suppressed was offered to Currencies and is unanswered.
+
+**Udi's rulings of 2026-09-24**: the mediator answers an aborted ask with `aborted(ReqId)`, keeping `closed(ReqId)` for a card merely no longer open, so a person can tell an act that took effect from one that came to nothing, and the scripted person re-arms on `aborted` and never on `closed` --- his own, vGLP and GC being both his; and 🔴 DO NOT FOLLOW vGLP'S REVISIONS: the arXiv paper `/Users/udi/Grassroots/tmp/2607.14138v1.pdf` governs, and it carries no `closed` and no `abort`, so four vGLP-derived commits were dropped and the mediator work kept.
+
 ### The red list of the merged tree, measured 2026-09-20 13:46 UTC
 
 `IGLP` is merged into the clone's LOCAL `main` at `8f6bcf6a` and NOT pushed; `origin/main` stands green at `10893053`.  The merge stays on the clone while GLP answers (Integration Cowork, 13:52 UTC), and it is re-measured on the same two trees if their answers change what is refused.  The four regenerated compiled files pass the test set for them: all 23 lines are `Med`/`Med1` -> `_` and nothing else.
