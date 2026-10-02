@@ -1,6 +1,6 @@
 # Open code work
 
-🔴 **Udi, 2026-10-02: "YOU CANNOT CHANGE THE LANGUAGE OR ITS RUNTIME ENGINE WITHOUT MY APPROVAL."**  A task that changes the language or the engine carries Udi's approval when it is written, and Code does not start one that does not (claude.md, "Sessions"; passed to Code 08:42 UTC).
+🔴 **Udi, 2026-10-02: "YOU CANNOT CHANGE THE LANGUAGE OR ITS RUNTIME ENGINE WITHOUT MY APPROVAL."**  For the engine the line is the specification (Udi, 2026-10-02): "Making the runtime comply with the spec does not need my approval; only runtime changes that go beyond the spec do."  A fix that makes the engine do what the language paper, TGLP or IGLP says needs no approval; anything the papers do not say needs it first (claude.md, "Sessions"; to Code 08:42 UTC, corrected 15:44 UTC).
 
 One line per item: origin (inbox and `Date`), owner, branch, state (requested, forwarded, in progress, merged, rejected), waiting on.  An item leaves when merged or rejected.  Kept by Integration Cowork.
 
@@ -158,7 +158,7 @@ Routable and already routed: the uninstantiated-parameter five (`cssn`, `cssn/ch
 
 ### sGLP's 1000-agent run dies of out-of-memory --- 2026-10-02
 
-- 🔴 (Code, 2026-10-02 13:40 UTC; blocking sGLP's run): `run.sh 1000 '5 years' 20260927` on `gap` `9f18c4eb` dies at simulated day 19.2 after 2,708 s; 100 agents run a year in 60 s; each step's cost grows with the population (about 550 times for ten times the agents).  Engine (GLP) or program (sGLP) not yet known.  Code to profile one simulated day at 1000 agents and name the owner (our word, 15:42 UTC); no engine change without Udi.  State: with Code.
+- 🔴 (Code, 2026-10-02 13:40 UTC; blocking sGLP's run): `run.sh 1000 '5 years' 20260927` on `gap` `9f18c4eb` dies at simulated day 19.2 after 2,708 s; 100 agents run a year in 60 s; each step's cost grows with the population (about 550 times for ten times the agents).  Engine (GLP) or program (sGLP) not yet known.  Code to profile one simulated day at 1000 agents and name the owner (our word, 15:42 UTC); a fix to the engine's spec is GLP's to task, and only a change beyond the spec needs Udi.  State: with Code.
 
 ### Guard negation leaves the language --- three owners, 2026-10-02
 
@@ -172,7 +172,7 @@ Routable and already routed: the uninstantiated-parameter five (`cssn`, `cssn/ch
 
 - Rounds two to six with Code (GLP #3 Cowork, 2026-10-02 07:59 UTC; Udi's rule, everything in no paper goes; inventory `tmp/glp-runtime-inventory.md`).  Four things in it are not GLP's, and Code reports them to us: vGLP's old-syntax compiler and display syntax; `multiagent/agent_runtime.dart` (owner asked of Coordination); `glp_network.dart`'s members beyond the seam contract (GLP-Networking-API); six tracked files under `glp_runtime/build/`.  Round six relinks the root into every program and renames modules by path (TGLP `modules.tex`): every owner's program recompiles, no source changes.  State: with Code.
 - **Round two** on `gap` (`c5c2629c`); CSSN's `main_cssn_village.dart` went with the play runner that alone ran it.  **Round three** (`GLP-weed3`) and **the instantiation** (`GLP-inst`) built and held off `gap` on four sentences TGLP must write first (with the TGLP session; blocking).  Round three's stops, with GLP (Code, 14:41 UTC): B4 `'_trust_declare'/2` registered by no kernel; B6 a module refused a certificate is activated anyway (`module_kernels.dart` `_activate`), against GSG s6 G1, 80 sweep loads; B9 `no_readers/1` evaluated nowhere; questions B1--B3 on `:=`.  Item 7 waits on vGLP's `vglp/dispatcher.glp:73, 95, 164, 174` (sent to vGLP 15:42 UTC, blocking).  `rv_agent.glp:77`'s `valid_attestation/4`, in no paper, sent to GLP-Networking-API 15:42 UTC, not blocking.
-- 🔴 **Three engine flaws** (Code to GLP, 2026-10-02 14:19 UTC; blocking): A, a guard over a variable fresh to the clause answers differently on 0x45 and the generic call and can hold a goal for ever; B, the 3(b) rule passes a guard over an unknown variable where `glp.tex:160` decides it fails; C, `ground/1` succeeds on a mutual reference, against TGLP.  Each fix changes the engine and needs Udi's approval.  State: with GLP.
+- 🔴 **Three engine flaws** (Code to GLP, 2026-10-02 14:19 UTC; blocking): A, a guard over a variable fresh to the clause answers differently on 0x45 and the generic call and can hold a goal for ever; B, the 3(b) rule passes a guard over an unknown variable where `glp.tex:160` decides it fails; C, `ground/1` succeeds on a mutual reference, against TGLP.  Each is a fix to the spec and needs no approval.  State: with GLP to task.
 
 
 ### Findings with owners, none blocking
