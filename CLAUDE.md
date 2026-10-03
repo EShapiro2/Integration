@@ -20,13 +20,13 @@ Directory `/Users/udi/Grassroots/Integration`; remote `git@github.com:EShapiro2/
 ## Sessions
 
 - **Cowork** reads at start: `claude.md`, this file, `to_all_inbox.md`, its own inbox from its last receipt, and `docs/work.md`.  It triages the inbox, writes forwards and rejections, keeps `docs/work.md` current, and writes Integration Code's own tasks --- merges, worktrees, moves, the harness --- into `Integration-Code_inbox.md`.
-- **Code** reads at start: `claude.md`, this file, `/Grassroots/GLP/CLAUDE.md`, `to_all_inbox.md`, and its own inbox from its last receipt.  It is the only session that commits to `main`, working in `/Users/udi/Grassroots/GLP`; every other commit is made by one of its subagents in that project's worktree.  🔴 It is the one session that polls: between tasks it re-reads `Integration-Code_inbox.md` from its last receipt, so that a task an owner's Cowork wrote reaches it without Udi carrying the message.  Udi talks to it about all code; he talks to a Cowork session about its paper.
+- **Code** reads at start: `claude.md`, this file, `/Grassroots/GLP/CLAUDE.md`, `to_all_inbox.md`, and its own inbox from its last receipt.  It is the only session that commits to `main`, working in `/Users/udi/Grassroots/GLP`; every other commit is made by one of its subagents in that project's worktree.  🔴 It is the one session that polls: between tasks it re-reads `Integration-Code_inbox.md` from its last receipt, so that a task an owner's Cowork wrote reaches it without Udi carrying the message.  🔴 **It reads its mail at every pause** (Udi, 2026-10-03): it re-reads `Integration-Code_inbox.md` from its last receipt before it ends any response to Udi and whenever a subagent reports, and acts on what is there.  Udi talks to it about all code; he talks to a Cowork session about its paper.
 
 ## No timed mail check
 
 🔴 **NEITHER INTEGRATION SESSION RUNS A TIMED MAIL CHECK** (Udi, 2026-09-26: "remove the clock").  It was ten-minutely from 2026-09-18 and hourly from 2026-09-23; both are retired, and no session arms a wake to read its inbox.
 
-WHAT REPLACES IT: Cowork reads its mail when Udi tells it to, as every paper's Cowork does; Code re-reads `Integration-Code_inbox.md` between tasks, which is its own reading and not a timed wake, so a task written there is still taken up without Udi carrying the message.
+WHAT REPLACES IT: Cowork reads its mail when Udi tells it to, as every paper's Cowork does; Code re-reads `Integration-Code_inbox.md` between tasks and at every pause (Udi, 2026-10-03), which is its own reading and not a timed wake, so a task written there is still taken up without Udi carrying the message.
 
 ## Subagents
 
