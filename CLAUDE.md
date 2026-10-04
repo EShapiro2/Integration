@@ -19,7 +19,7 @@ Directory `/Users/udi/Grassroots/Integration`; remote `git@github.com:EShapiro2/
 
 ## Sessions
 
-- **Cowork** reads at start: `claude.md`, this file, `to_all_inbox.md`, its own inbox from its last receipt, and `docs/work.md`.  It triages the inbox, writes forwards and rejections, keeps `docs/work.md` current, and writes Integration Code's own tasks --- merges, worktrees, moves, the harness --- into `Integration-Code_inbox.md`.
+- **Cowork** reads at start `claude.md`, this file and `docs/work.md`, and nothing more; it reads its mail --- `to_all` and `Integration_inbox.md` --- when Udi tells it to, with `bin/mail-read Integration "Integration #N Cowork"`, and sends with `bin/mail-send` (claude.md, "Mail").  It triages the inbox, writes forwards and rejections, keeps `docs/work.md` current, and writes Integration Code's own tasks --- merges, worktrees, moves, the harness --- into `Integration-Code_inbox.md`.
 - **Code** reads at start: `claude.md`, this file, `/Grassroots/GLP/CLAUDE.md`, `to_all_inbox.md`, and its own inbox from its last receipt.  It is the only session that commits to `main`, working in `/Users/udi/Grassroots/GLP`; every other commit is made by one of its subagents in that project's worktree.  🔴 It is the one session that polls: between tasks it re-reads `Integration-Code_inbox.md` from its last receipt, so that a task an owner's Cowork wrote reaches it without Udi carrying the message.  🔴 **It reads its mail at every pause** (Udi, 2026-10-03): it re-reads `Integration-Code_inbox.md` from its last receipt before it ends any response to Udi and whenever a subagent reports, and acts on what is there.  Udi talks to it about all code; he talks to a Cowork session about its paper.
 
 ## No timed mail check
@@ -41,7 +41,7 @@ WHAT REPLACES IT: Cowork reads its mail when Udi tells it to, as every paper's C
 
 ## Worktrees
 
-Integration's Code session creates one per project on request, once: `git -C /Users/udi/Grassroots/GLP worktree add /Users/udi/Grassroots/GLP-worktrees/<project> -b <project>`, and records it in `docs/work.md`.  The project names are Appendix A's.  A worktree is removed only by Integration, after its branch is merged: `git -C /Users/udi/Grassroots/GLP worktree remove /Users/udi/Grassroots/GLP-worktrees/<project>`.
+A worktree is made per task by Integration Code, named after its branch, off the branch its task names: `git -C /Users/udi/Grassroots/GLP worktree add /Users/udi/Grassroots/GLP-worktrees/<branch> -b <branch> <base>`.  The list is `git -C /Users/udi/Grassroots/GLP worktree list`; no table of them is kept by hand.  A worktree is removed only by Integration, after its branch is merged: `git -C /Users/udi/Grassroots/GLP worktree remove /Users/udi/Grassroots/GLP-worktrees/<branch>`.
 
 ## The work list
 
