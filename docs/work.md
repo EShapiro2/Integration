@@ -192,6 +192,12 @@ Routable and already routed: the uninstantiated-parameter five (`cssn`, `cssn/ch
 
 
 
+### GNA (GLP-Networking-API, renamed): two multi-owner items --- 2026-10-04
+
+- **Notice** (GLP-Networking-API #1 Cowork, `Integration_inbox.md` 2026-10-04 14:13 UTC; Udi's decisions of 2026-10-04 with GNA, in `GLP-Networking-API/docs/decisions.md`).  Owner tasks follow once GNA's paper is current; not blocking.
+- **1. Reconnection and the rendezvous server leave the Dart.**  GNA Section 6 has the rendezvous server as a host running the headless layer and a GLP rendezvous agent; today RECONNECT/AVAILABLE/PUNCH_INITIATE are Dart, in `networking/lib/src/signaling/`, `networking/lib/src/grassroots_network.dart` and `networking/bootstrap_anchor/`.  Owners: GNA (the transport, `examples/rendezvous`), GSG (the social graph distributes addresses and drives reconnection), GLP (the two new seam predicates, `peer_declare/1` and `address_declare/2`, approved and tasked, `c764743`).  The likely order, to post when the tasks come: GLP's predicates; GNA's rendezvous agent in GLP; GSG's address distribution and reconnection; the Dart signalling out last.
+- **2. madGLP over the real layer.**  Nothing implements `GlpNetwork` (`glp_runtime/lib/multiagent/glp_network.dart`) over `GrassrootsNetwork`; `main_grassapp_duo.dart` routes isolate messages through the layer directly.  Owners: GLP (IGLP's runtime adapter), GNA (the layer).  Done when the social graph runs on two phones through the interface.
+
 ### Findings with owners, none blocking
 - Ours: `GLP/docs/ma/HOW-TO-RUN.md` ("Updated: 2026-02-20") names paths gone since the reorganisation, and the harness cites it (`run_all_tests.sh:3222`).  To be rewritten from the harness's routes once `gap` is on `main`, every command run before it is written (Code's recommendation, 2026-10-02 12:39 UTC, taken).
 - GLP: `GlpPrinter` (`lib/compiler/glp_printer.dart:130`) prints the anonymous output `_?` as `_`, on the old-syntax compilation path and `wire/flattening.dart`; vGLP's own printer is fixed on `gap` (`4ae0b84c`).  Found by Code, forwarded by vGLP; sent to GLP to rule 2026-10-02 01:10 UTC.
