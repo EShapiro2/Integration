@@ -12,7 +12,7 @@ The list is `git -C /Users/udi/Grassroots/GLP worktree list`.  A worktree is mad
 
 ## Items
 
-Open only; a merged or rejected item leaves the list, git holding it.  Brought current 2026-10-09 18:43 UTC by Integration #3 Cowork, the sections from before `gap` folded into the last one below by Integration #2 Cowork; the mail is authoritative where the two differ.
+Open only; a merged or rejected item leaves the list, git holding it.  Brought current 2026-10-09 18:54 UTC by Integration #3 Cowork, the sections from before `gap` folded into the last one below by Integration #2 Cowork; the mail is authoritative where the two differ.
 
 ### The checker--compiler gap: branch `gap` --- since 2026-09-27
 
@@ -65,7 +65,7 @@ Open only; a merged or rejected item leaves the list, git holding it.  Brought c
   a. Currencies' bonds port, which has no consumer outside `programs/currencies`, on Currencies' answer to Code's Q2 of 2026-10-07 08:23 UTC (`Reqs?` carried through each helper to the next `serve`, as `vglp.tex:43` prints it).
   b. GLP, for IGLP: the bridge, forwarded whole.  Merged into `gap` by itself if the suite's known red set is unchanged by it, and otherwise with c.  The deployed mediator's protocol in `runtime.dart` stays until the mediator retires.
   c. One merge: Currencies' coins and sovereign ports; GSG's `social/graph/self.glp:54, 56, 226--283, 370--377` and `core/superapp_plays.glp:871--879, 1120, 1133`; IGLP's `manifests/coins_ui.dart`, `manifests/sovereign_ui.dart`, the three Flutter tests (`coins_isolate_test.dart:135--169` and the two screens) and `program_compilation_test.dart:167--186`.
-  State: Currencies answered Code's Q2, yes, so a goes ahead, and its task of 2026-10-04 16:14 UTC stands for a and c (`Integration-Code_inbox.md` 2026-10-09 18:33 UTC).  GLP wrote b and IGLP's part of c (`Integration-Code_inbox.md` 2026-10-09 18:38 UTC).  GSG read its mail 2026-10-09 18:39 UTC; c waits on its task.
+  State: Currencies answered Code's Q2, yes, so a goes ahead, and its task of 2026-10-04 16:14 UTC stands for a and c (`Integration-Code_inbox.md` 2026-10-09 18:33 UTC).  GLP wrote b and IGLP's part of c (`Integration-Code_inbox.md` 2026-10-09 18:38 UTC).  GSG wrote its part of c (2026-10-09 18:44 UTC, item 5).  Every task written; with Code.
 - **Then**: vGLP retires the deployed mediator (`med.glp`, `ui/mediator.glp`) and IGLP the old protocol in `runtime.dart` once the owners port their remaining `.vglp` sources (`vGLP/docs/decisions.md:112`): GSG's `grassapp/grassapp_agent.vglp`, `social/graph/core/agent.vglp` and `core/home.vglp`; `tests/vglp/one_clause/responder.vglp` (IGLP's); CSSN's two, dormant.  No request yet.
 
 ### One string, one canonical print: GLP's fault 2 (b) --- five owners, 2026-10-07
@@ -77,9 +77,9 @@ Open only; a merged or rejected item leaves the list, git holding it.  Brought c
 
 - **Udi lifted his word to Code of 2026-10-02**, "Ignore CSSN stuff till I ask differently" (Udi, 2026-10-09); told to Code 18:40 UTC, which reports CSSN's open sites to CSSN (its known-red checks, its `~` guards, its stops under the checker's newer conditions).
 - **CSSN's entries** (`Integration_inbox.md` 2026-10-09 10:41, 11:21, 18:03 UTC), answered 18:40 UTC:
-  1. `programs/jurix/contracts.glp`'s contract `cssn`: `send` requires `friend(f)` at the sender (`:296`) against the CSSN paper; the header's "same sixteen" (`:226`) where it holds eighteen.  Legal's (Appendix B `:75, 107`); forwarded to Legal 18:39 UTC.  State: forwarded.
+  1. `programs/jurix/contracts.glp`'s contract `cssn`: `send` requires `friend(f)` at the sender (`:296`) against the CSSN paper; the header's "same sixteen" (`:226`) where it holds eighteen.  Legal's (Appendix B `:75, 107`); forwarded to Legal 18:39 UTC, tasked by Legal 18:46 UTC with its two language changes of 18:43 UTC (Udi-approved, reported by Legal).  State: with Code.
   2. `programs/cssn`'s `.vglp` sources in the superseded syntax (`childsafe/agent.vglp` 33 clauses, `child_agent.vglp` 24); the child agent holding one parent (Section 8.1); `parent_child` refusing a cycle of two ("approved by Udi 2026-10-09", reported by CSSN).  CSSN's own; CSSN writes the tasks.  The port is merged after IGLP's bridge, in one merge with vGLP's retirement of the mediator in `cssn` (`childsafe/mediator.glp`) and IGLP's `cssn_v2_isolate_test.dart` and `program_compilation_test.dart`; vGLP asked for its task 18:40 UTC.  State: waits on CSSN's tasks.
-  3. Question 1, the forms and cards of Section 8.2 in the mediator in `cssn`: vGLP's; forwarded 18:40 UTC, recommending no change to a mediator that retires with the port.  Question 2, child befriending and the setup channel (Section 8.5): forwarded to Code 18:40 UTC, to answer CSSN from the code on `gap`.
+  3. Question 1, the forms and cards of Section 8.2 in the mediator in `cssn`: vGLP's; forwarded 18:40 UTC, recommending no change to a mediator that retires with the port.  Question 2, child befriending and the setup channel (Section 8.5): forwarded to Code 18:40 UTC, to answer CSSN from the code on `gap`.  Code wrote to CSSN 18:49 UTC.
 
 ### From before `gap`: what is still open, folded 2026-10-04
 
