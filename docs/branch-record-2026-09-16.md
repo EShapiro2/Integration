@@ -1,6 +1,6 @@
 # GLP branch and remote record, 2026-09-16
 
-Taken by Integration #1 Code at GLP `7dde3845` before the step 4 deletions of the reorganisation series.  Every ref below is recoverable by its SHA.
+Taken by Code #1 at GLP `7dde3845` before the step 4 deletions of the reorganisation series.  Every ref below is recoverable by its SHA.
 
 **The deletions were carried out on 2026-09-16 (Udi).**  18 local branches deleted; 85 remote refs deleted --- 84 `origin/claude/*` and `origin/cart`.  The record below lists 86 because `origin/claude/revise-paper-Az0EC` was a stale remote-tracking ref that the remote no longer had; `origin/overleaf-2025-12-01-1312` was stale in the same way and was pruned rather than deleted, which is why it is not in the list below and is gone all the same.  `origin` then held 18 heads: `main`, the five worktree branches, Ohad's three, and `feat/add_android_scaffolding`, `map_impl`, `pointer-architecture`, `shared`, `single-id-migration`, `subtyping`, `unfriend-main-update`, `vm-claude-integration`, `vm-v216-core`, which the task kept.  The `art-of-glp` remote was removed and both worktrees under `/Grassroots/tmp/` were removed.
 
