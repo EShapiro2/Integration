@@ -12,7 +12,7 @@ The list is `git -C /Users/udi/Grassroots/GLP worktree list`.  A worktree is mad
 
 ## Items
 
-Open only; a merged or rejected item leaves the list, git holding it.  Brought current 2026-10-09 19:43 UTC by Integration #3, the sections from before `gap` folded into the last one below by Integration #2; the mail is authoritative where the two differ.
+Open only; a merged or rejected item leaves the list, git holding it.  Brought current 2026-10-10 09:52 UTC by Integration #3, the sections from before `gap` folded into the last one below by Integration #2; the mail is authoritative where the two differ.
 
 ### The checker--compiler gap: branch `gap` --- since 2026-09-27
 
@@ -66,7 +66,7 @@ Open only; a merged or rejected item leaves the list, git holding it.  Brought c
   b. GLP, for IGLP: the bridge, forwarded whole.  Merged into `gap` by itself if the suite's known red set is unchanged by it, and otherwise with c.  The deployed mediator's protocol in `runtime.dart` stays until the mediator retires.
   c. One merge: Currencies' coins and sovereign ports; GSG's `social/graph/self.glp:54, 56, 226--283, 370--377` and `core/superapp_plays.glp:871--879, 1120, 1133`; IGLP's `manifests/coins_ui.dart`, `manifests/sovereign_ui.dart`, the three Flutter tests (`coins_isolate_test.dart:135--169` and the two screens) and `program_compilation_test.dart:167--186`.
   State: Currencies answered Code's Q2, yes, so a goes ahead, and its task of 2026-10-04 16:14 UTC stands for a and c (`Code_inbox.md` 2026-10-09 18:33 UTC).  GLP wrote b and IGLP's part of c (`Code_inbox.md` 2026-10-09 18:38 UTC).  GSG wrote its part of c (2026-10-09 18:44 UTC, item 5).  Every task written; with Code.
-- **Then**: vGLP retires the deployed mediator (`med.glp`, `ui/mediator.glp`) and IGLP the old protocol in `runtime.dart` once the owners port their remaining `.vglp` sources (`vGLP/docs/decisions.md:112`): GSG's `grassapp/grassapp_agent.vglp`, `social/graph/core/agent.vglp` and `core/home.vglp`; `tests/vglp/one_clause/responder.vglp` (IGLP's); CSSN's two, dormant.  No request yet.
+- **Then, the old `*(...)` form goes** (Code to Integration, 2026-10-09 19:55 UTC; GLP 2026-10-09 19:15 UTC: it goes with the Definition it came from; the parser reads the new Definition on `gap` `fa020d7a`).  Two steps, Code's to sequence (to Code 2026-10-10 09:50 UTC): (1) after the bridge, the remaining ports in their owners' files from vGLP's Definition --- GSG's `grassapp/grassapp_agent.vglp`, `social/graph/core/agent.vglp`, `core/home.vglp` (`home.glp` re-emitted) and IGLP's fixture `tests/vglp/one_clause/responder.vglp`, by Code with no owner task first, GSG told; with them vGLP retires the deployed mediator (`med.glp`, `ui/mediator.glp`) and IGLP the old protocol in `runtime.dart` (`vGLP/docs/decisions.md:112`); (2) one last merge: vGLP's compiler and the display declaration to the new AST (30 sites, from vGLP's Definitions; vGLP told), the old form out of the parser, the AST and `isVolitionGuarded`, `test/vglp`'s 86 and the harness's three N re-emit checks restated.  State: with Code.
 
 ### One string, one canonical print: GLP's fault 2 (b) --- five owners, 2026-10-07
 
