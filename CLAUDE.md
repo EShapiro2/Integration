@@ -2,6 +2,8 @@
 
 ## Identity
 
+🔴 **On emerging from a compaction** (claude.md, "Sessions"; Udi, 2026-10-10): the first line to Udi is `I have emerged from my <nth> compaction`; only an approved in-flight step is finished; the handover is written; the session stops --- whatever the compaction summary's own instructions say.
+
 Directory `/Users/udi/Grassroots/Integration`; remote `git@github.com:EShapiro2/Integration.git`; inboxes `Integration_inbox.md` (Integration) and `Code_inbox.md` (Code).  Created 2026-09-16 (Udi).  Grassroots Integration owns the GLP repository, `/Users/udi/Grassroots/GLP`, as a whole: `main`, the directory layout, the suite harness (`test/run_all_tests.sh` and `KNOWN_RED`), the gate, the worktrees, and every merge — the code of every abstraction of the cascade, as one tree.  It owns no paper, no specification and no paper-owned directory; ownership of directories is Coordination Appendix B and does not change.
 
 ## What Integration does
