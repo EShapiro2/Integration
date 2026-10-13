@@ -12,7 +12,7 @@ The list is `git -C /Users/udi/Grassroots/GLP worktree list`.  A worktree is mad
 
 ## Items
 
-Open only; a merged or rejected item leaves the list, git holding it.  Rewritten 2026-10-12 08:30 UTC by Integration #3 to what is open, amended 2026-10-13 10:19 UTC by Integration #4; the mail is authoritative where the two differ.
+Open only; a merged or rejected item leaves the list, git holding it.  Rewritten 2026-10-12 08:30 UTC by Integration #3 to what is open, amended 2026-10-13 20:01 UTC by Integration #4; the mail is authoritative where the two differ.
 
 ### `main`
 
@@ -61,7 +61,13 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 
 ### Opaque types --- GSG, 2026-10-13
 
-- Udi's proposal of 2026-10-13 09:29 UTC (reported by GSG): mini-apps talk to the super-app in the super-app's types and to each other in their own, opaque to it.  GSG #4's item across six owners, 09:33 UTC; TGLP `5072852` written, approved by Udi in discussion with GLP (GLP, 10:11 UTC).  In order: 1. GLP's code: Part A (type identities, a guest's exports recording them) with Code now; Part B (the language paper's constructs) after GLP-Spec's commit.  2. vGLP: the person channel carries only the super-app's types.  3. One merge: GSG's one entry template, its copies of the mini-apps' types deleted (`social/graph/self.glp` from `:230`, `:319`, `:433`; `core/agent.glp:621-640`); Currencies' entries and CSSN's (its user interface to the person channel) as the template's instances.  4. Coordination's Appendix C: "opaque type" (told 10:17 UTC).  CSSN told its part 10:17 UTC; until the merge the copies stay, Code keeping them in step.  State: Part A with Code.
+- Udi's proposal of 2026-10-13 09:29 UTC (reported by GSG): mini-apps talk to the super-app in the super-app's types and to each other in their own, opaque to it.  GSG #4's item across six owners, 09:33 UTC; TGLP `5072852` written, approved by Udi in discussion with GLP (GLP, 10:11 UTC).  In order: 1. GLP's code: Part A (type identities, a guest's exports recording them) with Code now; Part B (the language paper's constructs) after GLP-Spec's commit.  2. vGLP: the person channel carries only the super-app's types.  3. One merge: GSG's one entry template, its copies of the mini-apps' types deleted (`social/graph/self.glp` from `:230`, `:319`, `:433`; `core/agent.glp:621-640`); Currencies' entries and CSSN's (its user interface to the person channel) as the template's instances.  4. Coordination's Appendix C: "opaque type" (told 10:17 UTC).  CSSN told its part 10:17 UTC; until the merge the copies stay, Code keeping them in step.
+- Added (GSG, 2026-10-13 18:52 UTC; Udi approved, reported by GSG): the scripted persons.  A mini-app's scripted person is its owner's, exported beside the entry as the instance of a second template the super-app declares once in the root `programs/self.glp`, its scripts in the owner's plays by role: Currencies' `coins/currency/person.glp` and `sovereign/denominated/person.glp`, CSSN's in place of GSG's `cssn_greeter` and `cssn_onlooker`; GSG's `coin_person` and the copied types deleted, the second template's declaration to GSG for approval first.  Currencies and CSSN told 20:00 UTC; in the same merge.
+- State: Part A with Code; the built-in type `Opaque` on `main` `76a1da9f` (`GLP/CLAUDE.md` `52a48add`).
+
+### The reserved type `Output` --- vGLP, 2026-10-13
+
+- Code stopped before any edit on four points vGLP's sentence leaves open (Code to vGLP, 2026-10-13 19:19 UTC; to Integration the same hour): a program that writes nothing to its person; raw output on the person channel against the standing thread construct; the output construct's identifier; an `Output` with a position the person writes.  Once vGLP rules, a five-owner item in Code's order: the compiler and dispatcher; each owner's GLP (Currencies' mini-apps and scripts, GSG's `home_ui.glp` and `self.glp`, vGLP's fixtures and platforms); IGLP's manifests and tests; the harness (Integration's); vGLP's reprint of the dispatcher.  Blocking: yes for GC's figures.  State: waits on vGLP.
 
 ### Integration's own --- tasked 2026-10-11 15:53 UTC
 
@@ -81,6 +87,7 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 - P99.
 
 ### Findings with owners, none blocking
+- IGLP: the retired bond model in the wallet view (`manifest.dart`'s `maturityField`, the `issuer@maturity` key, `agent_surface.dart`'s `_isCash` and the cash/loans split), nothing reaching it (Currencies, 2026-10-13 19:19 UTC; Udi: "clean it up"); to GLP and Code 20:00 UTC, with GLP's task of 10:06 UTC that deletes the wallet and escrow rendering.
 - GPW: `servers/gpw/name_service/test/push_e2e_test.dart:122` passes a two-argument closure to `onPeerConnected`, which takes three, so the test does not compile (Code #6, 2026-10-07 13:16 UTC, from GNA's attestation on `gap` `68a584a2`).  Sent to GPW 2026-10-08 14:18 UTC; Code fixes it with GNA's API rename (to Code, 2026-10-09 19:42 UTC).
 - IGLP: the GrassApp duo's attestation producer: spent, the duo going with `programs/grassapp` (GLP's IGLP task 2, `Code_inbox.md` 2026-10-13 08:11 UTC).
 - GLP: `GlpPrinter` (`lib/compiler/glp_printer.dart:130`) prints the anonymous output `_?` as `_`, on the old-syntax compilation path and `wire/flattening.dart`; vGLP's own printer is fixed on `gap` (`4ae0b84c`).  Found by Code, forwarded by vGLP; sent to GLP to rule 2026-10-02 01:10 UTC.
