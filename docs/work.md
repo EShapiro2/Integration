@@ -12,12 +12,12 @@ The list is `git -C /Users/udi/Grassroots/GLP worktree list`.  A worktree is mad
 
 ## Items
 
-Open only; a merged or rejected item leaves the list, git holding it.  Rewritten 2026-10-12 08:30 UTC by Integration #3 to what is open, amended 2026-10-13 00:44 UTC by Integration #4; the mail is authoritative where the two differ.
+Open only; a merged or rejected item leaves the list, git holding it.  Rewritten 2026-10-12 08:30 UTC by Integration #3 to what is open, amended 2026-10-13 08:14 UTC by Integration #4; the mail is authoritative where the two differ.
 
 ### `main`
 
-- **`gap` is on `main` since 2026-10-10** (Code #6, 12:04 UTC: `372f062e`, 461 commits).  Every owner's branch goes off `main`.  The suite on `main` at `dfd9e0b9`: 4190 passed, 0 failed, 93 known red (`GLP/CLAUDE.md`, `f95fe8f7`).
-- **Unmerged branches** (measured 2026-10-12 23:02 UTC, `git branch --no-merged main`): `Currencies-bonds-boot` (3 ahead, `bonds_v2` mad_boots' `tee` and `actor_dispatch`; spent with `bonds_v2`),  `GLP-bookdel` (1, the book's `bounded_buffer.glp`, `bounded_buffer_original.glp` and `channels.glp` deleted, GLP 2026-10-12 22:33 and 22:38 UTC), `GLP-gapfix` (1, head reader matching only an unbound goal writer), `GLP-import` (1, `424afd6e`, the linker's import check, held on GSG's imports, below), `GLP-oom` (4, a guard-suspension fix and three PROPOSAL commits awaiting GLP), `GLP-r3c` (7, weeding round three), `IGLP-qparams` (3, question parameters, which vGLP's changed compilation may have overtaken).  `GSG-port2` is on `main` (`dfd9e0b9`).
+- **`gap` is on `main` since 2026-10-10** (Code #6, 12:04 UTC: `372f062e`, 461 commits).  Every owner's branch goes off `main`.  The suite on `main` at `dd2640b4`: 4137 passed, 0 failed, 93 known red, after `bonds_v2`'s 30 checks and 12 isolate tests went (Code #8, 2026-10-13 01:49 UTC).
+- **Unmerged branches** (measured 2026-10-13 08:14 UTC, `git branch --no-merged main`): `Currencies-bonds-boot` (3 ahead, `414acfc5`, `bonds_v2` mad_boots' `tee` and `actor_dispatch`; spent, `bonds_v2` deleted), `GLP-gapfix` (1, head reader matching only an unbound goal writer), `GLP-oom` (4, a guard-suspension fix and three PROPOSAL commits awaiting GLP), `GLP-r3c` (7, weeding round three), `IGLP-qparams` (3, question parameters, which vGLP's changed compilation may have overtaken).  `GLP-bookdel` and `GLP-import` are on `main`.
 
 ### vGLP's old volition-guard form leaves the language --- since 2026-10-04
 
@@ -32,7 +32,7 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 
 ### GNA's two multi-owner items --- since 2026-10-04
 
-- **1. Reconnection and the rendezvous server leave the Dart**: one task of Code's (Udi, 2026-10-09: "decide, make it simple, fix, get it done"; to Code 19:42 UTC), GNA's of 2026-10-09 19:37 UTC sequenced after GNA's API task, its adapter and GLP's seam predicates, GSG's part done by the same subagent in GSG's files and reported to GSG.  GNA's adapter move, API item 3 and Tasks A and C are on `main` (`b6346e88`, `21b67a05`, `f98dd1c7`, `872c1078`, 2026-10-12).  State: with Code.
+- **1. Reconnection and the rendezvous server leave the Dart**: one task of Code's (Udi, 2026-10-09: "decide, make it simple, fix, get it done"; to Code 19:42 UTC), GSG's part done by Code in GSG's files and reported to GSG.  GNA's part on `main` `1058731a` but for deleting `networking/bootstrap_anchor`, held on GNA, which holds the only invite server (Code #8, 2026-10-13 03:25 UTC).  GSG's part --- `attest(PkA, PkB)` on befriending, reconnect and available to the rendezvous servers, `address_declare/2` and `punch_udp/1` on `punch(Addr)`, the graph's hash at the server's boot --- Code's, from GNA `rendezvous.tex` and GSG's networking appendix (Integration to Code, 2026-10-13 08:12 UTC, restating 2026-10-09).  State: with Code.
 - **2. madGLP over the real layer**: GLP's step A, `AgentRuntime` and `IsolateManager` over a given `GlpNetwork`, on `main` (`58c0367d`).  GNA's API rename fixes its callers in IGLP's duo and GPW's `servers/gpw/` in the same commit (to Code 2026-10-09 19:42 UTC); IGLP's duo attestation producer (GLP's task 2026-10-09 18:38 UTC) is spent if the duo goes with `programs/grassapp` (GLP told 2026-10-12 23:01 UTC).  State: with Code.
 
 ### The loader for directory modules --- GLP, 2026-10-11
@@ -48,7 +48,7 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 - Weeding round three (`GLP-r3c`) and the instantiation (`GLP-inst`), held on sentences TGLP must write first; `GLP-oom`'s three PROPOSAL commits; three engine flaws reported to GLP 2026-10-02 14:19 UTC (A, a guard over a variable fresh to the clause answering differently on 0x45 and the generic call; B, the 3(b) rule passing a guard over an unknown variable, against `glp.tex:160`; C, `ground/1` succeeding on a mutual reference, against TGLP), each a fix to the spec needing no approval.  State: with GLP; not re-verified since 2026-10-04.
 - sGLP's 1000-agent five-year run, which died of out-of-memory at simulated day 19 before the object-cell heap: whether it now reaches its horizon is unreported.
 
-- The linker's import check (GLP 2026-10-12 21:07 UTC item 1), TGLP `bae5259`: built on `GLP-import` `424afd6e`; it refuses `social/graph` on GSG's imports at `core/home_ui.glp:29-30` and `core/self.glp:40-41` (Code #8, 21:35 UTC; to GSG 23:01 UTC, Blocking: yes).  GSG's port on `dfd9e0b9` may answer it; Code re-runs the check on `main`.
+- The linker's import check (TGLP `bae5259`): on `main` (`3dcd6327`, `GLP-import` merged 2026-10-13 01:07 UTC), GSG's imports agreeing after its port.  GLP's call-site instantiation of a bare-only parameter and its refusal of an unreached module's SRSW, guards and types: yes to both (GLP to Code, 2026-10-13 08:02 UTC), Blocking: yes; with Code.
 - The checker fault of Code #8 to GLP, 2026-10-12 21:59 UTC: the load check and the goal check disagree on a parameterised procedure with a defined guard.  Blocking: yes; with GLP.
 
 ### Programs that do not load --- Code #8, 2026-10-12 21:07 UTC
@@ -61,20 +61,20 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 - Currencies (to Integration 2026-10-12 23:23 UTC, Udi approved): `bonds_v2` is a second copy and goes, its flaw unrepaired, the two-escrow case a test of `programs/currencies/bonds`.  Its task (`Code_inbox.md` 23:23 UTC): `bonds` a mini-app (Code: in `bonds/dated/`), `bonds_v2/secure` to `programs/currencies/secure`, then `bonds_v2` deleted; Code tells Integration when the deletion is on `main`.  Code's two questions to Currencies (00:04 UTC): how one escrow agent holds two agreements (Blocking: yes, for the two-escrow run), and the name `dated`.  With the deletion, on Integration's yes of 00:43 UTC: S4 repointed to `sovereign/denominated`; IGLP's `bonds_v2_isolate_test.dart` and `programs/tests/bonds_v2_boots/` deleted, the prose in Integration's files and IGLP's comments with them (GLP told 00:43 UTC); IGLP's `program_compilation_test.dart:224` path.  For the phone, `sync_glp_assets.sh` packages `bonds/dated` in the one-copy merge (GLP told 00:43 UTC).
 - Before it, `Currencies-advance` (advance one day at a time, no date warranty, the request fields named) turns 9 SG checks and 2 Flutter tests red on the copies of Currencies' types in GSG's super-app and IGLP's coins tests (Code #8, 2026-10-13 00:00 UTC).  Integration's yes, 00:05 UTC (Udi approved): on `main` `395a5448` with the copies brought to the new types, suite 4199 passed, 0 failed, 93 known red (Code #8, 00:18 UTC).  GSG asked (00:05 UTC) how the super-app takes Currencies' types from Currencies' own declarations.
 - Coordination told (2026-10-13 00:06 UTC): Currencies' row loses `bonds_v2`, `mad_boot`, `play12` and gains `secure`, with the host change, when the merges are on `main`; and the row's "SPM cites it", which Currencies finds in no SPM text.
-- State: Currencies' items 1 and 2 merging (Code #8, 00:34 UTC), then `bonds_v2` deleted; then IGLP's and GSG's merge.
+- Currencies' part on `main`: `bonds/dated` the mini-app, `secure` moved, `bonds_v2` deleted (`dd2640b4`; Coordination told 2026-10-13 08:12 UTC for Currencies' row); its two-escrow run waits on Currencies' answer to Code's 00:04 UTC item 1, and the one-copy merge does not wait for it.  IGLP's part is GLP's task 2 (`Code_inbox.md` 2026-10-13 08:11 UTC).
+- State: waits on GSG's deletion task, asked of GSG 2026-10-12 23:01 UTC.
 
 ### Integration's own --- tasked 2026-10-11 15:53 UTC
 
 - Done: the harness keeps `dart test`'s and `flutter test`'s raw output in `tmp/suite_q_dart.txt` and `suite_q_flutter.txt`; the merged branches and worktrees gone; `GLP/docs/ma/HOW-TO-RUN.md` rewritten and run; 14 of the manual's 15 copies of TGLP replaced by pointers (Code #7, 2026-10-12 04:10 and 07:04 UTC).  The manual's §3.5 sentence went on GLP's task, `eb7de480` (Code #7, 2026-10-12 09:02 UTC).
-- Open, to Code 2026-10-12 08:25 UTC: a negative fixture per missing pair (`tmp/int57-negatives.txt`: guards on a directory, a linked program and a multi-isolate boot; SRSW on a multi-isolate boot; every check through `:boot` and through `IsolateManager` with `programDir`; SRSW in a directory module no entry point reaches).  Queued after vGLP's work and GLP's and GSG's tasks (Code #7, 2026-10-12 09:02 UTC).  State: with Code.
-- IGLP's intermittent `bonds_v2_isolate_test.dart` failure (`main` `a4171106`, 2026-10-11): with IGLP until its next failure names the cause (GLP, 2026-10-11 21:42 UTC); goes with `bonds_v2`.
+- The negative fixtures: six of seven pairs on `main` `198977fb`, 15 REPL checks and `neg_check_paths_test.dart` (Code #8, 2026-10-13 00:57 UTC).  Pair 7, SRSW in a module no entry point reaches, waits on the unreached-module check GLP ruled at 08:02 UTC.  State: with Code.
 
 ### Residue of `gap`, not re-verified since 2026-10-04; check the mail before acting
 
 - B2's declarations of other owners leaving a primitive alternative uncovered (Currencies 11, GSG 5, GNA 2, GFWC `federation`; GSG's coverage item 9 took nine of eleven at `e353614c`).
 - The wider `Key` batch: `swap` and `SwapCard` with Currencies' issuer sweep; grassapp's senders go with `programs/grassapp`.
 - A writer is never dropped (Udi, 2026-10-02): GSG's `hold_*` sites and `bounded.glp:214`.
-- Declarations without a parameter list (TGLP `parameterized-types.tex:108`): Currencies `bonds_v2/boot.glp:67, 75` (goes with `bonds_v2`), `secure/issuer.glp:34` (moving to `programs/currencies/secure`).
+- Declarations without a parameter list (TGLP `parameterized-types.tex:108`): Currencies `programs/currencies/secure/issuer.glp:34`.
 - The owners' open questions to Code at the merge (Code's list of 2026-10-04), and the four checker findings for IGLP of 2026-09-18.
 
 ### Dormant
@@ -83,12 +83,12 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 
 ### Findings with owners, none blocking
 - GPW: `servers/gpw/name_service/test/push_e2e_test.dart:122` passes a two-argument closure to `onPeerConnected`, which takes three, so the test does not compile (Code #6, 2026-10-07 13:16 UTC, from GNA's attestation on `gap` `68a584a2`).  Sent to GPW 2026-10-08 14:18 UTC; Code fixes it with GNA's API rename (to Code, 2026-10-09 19:42 UTC).
-- IGLP: the GrassApp duo (`main_grassapp_duo.dart:186` and its Runner) has no attestation producer, where the networking demo app has one; GNA `api.tex`, "Attestation" (same entry).  Tasked by GLP 2026-10-09 18:38 UTC, to follow GNA's adapter task of 2026-10-04 16:07 UTC (GNA item 2 above).  Spent if the duo goes with `programs/grassapp` (GLP told 2026-10-12 23:01 UTC).
+- IGLP: the GrassApp duo's attestation producer: spent, the duo going with `programs/grassapp` (GLP's IGLP task 2, `Code_inbox.md` 2026-10-13 08:11 UTC).
 - GLP: `GlpPrinter` (`lib/compiler/glp_printer.dart:130`) prints the anonymous output `_?` as `_`, on the old-syntax compilation path and `wire/flattening.dart`; vGLP's own printer is fixed on `gap` (`4ae0b84c`).  Found by Code, forwarded by vGLP; sent to GLP to rule 2026-10-02 01:10 UTC.
 - vGLP: its canonical compilation's `close/1` collides with the root's channel guard; the root's stays and vGLP renames its own (Udi, 2026-10-02; GLP 2026-10-01 23:14 UTC), forwarded to vGLP 23:21 UTC.  The checker gap Code found with it (`p(A) :- close(A?)`, `A` at `Request?`, passes) is GLP's.
 
 - GFWC: three readings for yes/no (the relayed motion's epoch, identities as constants under the standard order, two row-existence preconditions), with `767e433d`.
 - Legal: a redundancy in the appendix's provenance clause diverging from Section 3.6 on a `sign`-like schema, the printing conventions taken from Section 5.2, CSSN's check needing `:limit` above the REPL's default, with `d5fd3fd5`.
-- IGLP and vGLP: under vGLP's default-display sentence a functor is not an argument, so `minted(2)` reads `2` in the panel's list (`432326ec`).
+- vGLP and IGLP, Blocking: yes, for GC's two screen figures (Currencies, 2026-10-13 08:04 UTC): a written screen message drops its functor (`opened(bob)`, `minted(2)`, `swap_done(bob)` read "bob", "2", "bob"), and the swap card's offer shows no labelled field (`coins-card.png`, `coins-swap-form.png`); first seen at `432326ec`.  To vGLP 08:12 UTC, to say whether Definition "Widget Declaration, Default Widget" already requires the alternative's name and the labels.
 - vGLP: `currency-manifest-derivation.md` still describes the coins swap card as two buttons (Code, 18:15 UTC).
-- IGLP: the writer check at a volitional call's output positions is not made on an initial goal (the bridge, the REPL's goal entry); vGLP Definition "Volitional Procedure, ..., vGLP Program" (Code #8, 2026-10-12 22:42 UTC).  To GLP for IGLP 2026-10-12 23:01 UTC.
+- IGLP: the writer check at a volitional call's output positions on an initial goal: GLP's IGLP task 1 (`Code_inbox.md` 2026-10-13 08:11 UTC), with Code.
