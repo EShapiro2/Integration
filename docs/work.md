@@ -12,7 +12,7 @@ The list is `git -C /Users/udi/Grassroots/GLP worktree list`.  A worktree is mad
 
 ## Items
 
-Open only; a merged or rejected item leaves the list, git holding it.  Rewritten 2026-10-12 08:30 UTC by Integration #3 to what is open, amended 2026-10-13 20:08 UTC by Integration #4; the mail is authoritative where the two differ.
+Open only; a merged or rejected item leaves the list, git holding it.  Rewritten 2026-10-12 08:30 UTC by Integration #3 to what is open, amended 2026-10-13 20:12 UTC by Integration #4; the mail is authoritative where the two differ.
 
 ### `main`
 
@@ -64,7 +64,8 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 - Udi's proposal of 2026-10-13 09:29 UTC (reported by GSG): mini-apps talk to the super-app in the super-app's types and to each other in their own, opaque to it.  GSG #4's item across six owners, 09:33 UTC; TGLP `5072852` written, approved by Udi in discussion with GLP (GLP, 10:11 UTC).  In order: 1. GLP's code: Part A (type identities, a guest's exports recording them) with Code now; Part B (the language paper's constructs) after GLP-Spec's commit.  2. vGLP: the person channel carries only the super-app's types.  3. One merge: GSG's one entry template, its copies of the mini-apps' types deleted (`social/graph/self.glp` from `:230`, `:319`, `:433`; `core/agent.glp:621-640`); Currencies' entries and CSSN's (its user interface to the person channel) as the template's instances.  4. Coordination's Appendix C: "opaque type" (told 10:17 UTC).  CSSN told its part 10:17 UTC; until the merge the copies stay, Code keeping them in step.
 - Added (GSG, 2026-10-13 18:52 UTC; Udi approved, reported by GSG): the scripted persons.  A mini-app's scripted person is its owner's, exported beside the entry as the instance of a second template the super-app declares once in the root `programs/self.glp`, its scripts in the owner's plays by role: Currencies' `coins/currency/person.glp` and `sovereign/denominated/person.glp`, CSSN's in place of GSG's `cssn_greeter` and `cssn_onlooker`; GSG's `coin_person` and the copied types deleted, the second template's declaration to GSG for approval first.  Currencies and CSSN told 20:00 UTC; in the same merge.
 - O1, the built-in type `Opaque`, and the namespace are on `main` `76a1da9f` (Code to GLP, 2026-10-13 19:18 UTC).  O2, the template in the root `programs/self.glp` (Udi: "make the superapp types be higher than all", reported by GLP), stopped on four points to GLP (Code, 19:11 UTC): the person channel's shape, the name clashes, the draft against TGLP, a TGLP gap.  The clashes ruled (Udi, 2026-10-13, reported by GLP 20:04 UTC): the root takes `RootChannel(T)`, `Conversation(T)`, `SgToApp(T)`, `AppToSg`, `SgChannel(T)`, `PersonIn` and `miniapp/3` in the same merge as GSG's build, every duplicate deleted in it; each owner to approve or say what differs, to GLP: GSG (`social/graph/self.glp:146-158`, `:255`, `home.glp`), Currencies (three `self.glp`, `PersonIn` six times), CSSN (`cssn/self.glp:77`), vGLP (`dispatcher.glp`, `cva/self.glp`), told 20:07 UTC; GLP approves its tests'.
-- State: O2 with GLP's answers to Code's 19:11 UTC and the owners' approvals.
+- CSSN approved its deletion (20:08 UTC; told GLP 20:12 UTC); CSSN's task is in Code's inbox.  The person channel with V at T (Code's point 1): vGLP's to define, a parameterised declaration in the root beside the template (GSG 20:10 UTC; to vGLP 20:11 UTC, Blocking: yes).
+- State: O2 with vGLP's person channel, GLP's answers to Code's points 3 and 4, and GSG's, Currencies' and vGLP's approvals.
 
 ### The reserved type `Output` --- vGLP, 2026-10-13
 
