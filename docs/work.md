@@ -12,7 +12,7 @@ The list is `git -C /Users/udi/Grassroots/GLP worktree list`.  A worktree is mad
 
 ## Items
 
-Open only; a merged or rejected item leaves the list, git holding it.  Rewritten 2026-10-12 08:30 UTC by Integration #3 to what is open, amended 2026-10-13 20:28 UTC by Integration #4; the mail is authoritative where the two differ.
+Open only; a merged or rejected item leaves the list, git holding it.  Rewritten 2026-10-12 08:30 UTC by Integration #3 to what is open, amended 2026-10-14 22:02 UTC by Integration #4; the mail is authoritative where the two differ.
 
 ### `main`
 
@@ -66,14 +66,16 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 - O1, the built-in type `Opaque`, and the namespace are on `main` `76a1da9f` (Code to GLP, 2026-10-13 19:18 UTC).  O2, the template in the root `programs/self.glp` (Udi: "make the superapp types be higher than all", reported by GLP), stopped on four points to GLP (Code, 19:11 UTC): the person channel's shape, the name clashes, the draft against TGLP, a TGLP gap.  The clashes ruled (Udi, 2026-10-13, reported by GLP 20:04 UTC): the root takes `RootChannel(T)`, `Conversation(T)`, `SgToApp(T)`, `AppToSg`, `SgChannel(T)`, `PersonIn` and `miniapp/3` in the same merge as GSG's build, every duplicate deleted in it; each owner to approve or say what differs, to GLP: GSG (`social/graph/self.glp:146-158`, `:255`, `home.glp`), Currencies (three `self.glp`, `PersonIn` six times), CSSN (`cssn/self.glp:77`), vGLP (`dispatcher.glp`, `cva/self.glp`), told 20:07 UTC; GLP approves its tests'.
 - CSSN approved its deletion (20:08 UTC; told GLP 20:12 UTC); CSSN's task is in Code's inbox.  The person channel with V at T (Code's point 1): vGLP's to define, a parameterised declaration in the root beside the template (GSG 20:10 UTC; to vGLP 20:11 UTC, Blocking: yes).
 - The template carries a calendar for a dated mini-app, a stream of dates the super-app writes from the device's clock, so `bonds/4` and `sovereign/4` are the hosted instances (Currencies 20:21 UTC, GB Appendix F; to GSG 20:27 UTC, Blocking: yes).
-- State: O2 with vGLP's person channel, GSG's calendar, GLP's answers to Code's points 3 and 4, and GSG's, Currencies' and vGLP's approvals.
+- Decided (Udi, 2026-10-14, reported by vGLP to GSG 13:21 UTC): the template takes two parameters, D for the person channel (`PersonChannel(D) ::= Channel(PersonIn(D), Stream(Draw(D)))`, never closing, vGLP's Definition "Person Channel") and T for the mini-app's own channels; `procedure(D, T) miniapp(Key?, PersonChannel(D)?, SgChannel(T)?, Stream(Integer)?)`, the calendar written by the super-app.  Building on Code's `OpaqueMerge2` (6 ahead of `main` at 2026-10-14 22:02 UTC: the calendar `ad85841c`, the harness's SG comments, the root's `PersonIn(T)`).
+- State: with Code on `OpaqueMerge2`.
 
-### The reserved type `Output` --- vGLP, 2026-10-13
+### The anonymous reader leaves every clause --- GLP, 2026-10-14
 
-- Code stopped before any edit on four points vGLP's sentence leaves open (Code to vGLP, 2026-10-13 19:19 UTC; to Integration the same hour): a program that writes nothing to its person; raw output on the person channel against the standing thread construct; the output construct's identifier; an `Output` with a position the person writes.  Once vGLP rules, a five-owner item in Code's order: the compiler and dispatcher; each owner's GLP (Currencies' mini-apps and scripts, GSG's `home_ui.glp` and `self.glp`, vGLP's fixtures and platforms); IGLP's manifests and tests; the harness (Integration's); vGLP's reprint of the dispatcher.  Blocking: yes for GC's figures.  vGLP ruled (Code_inbox.md 19:25 UTC; Udi: yes to all four, reported by Code).  Code builds it on one branch, `IGLP-output`, in five commits by owner, merged once, each owner told with the merge (Code, 20:01 UTC); the wallet's retired model follows it.  State: with Code.
+- The checker refuses `_?` and `_Name?` at every position (GLP-Spec `297db75`, Remark "Anonymous Variables"; TGLP `2424f4c`; Udi, 2026-10-14, on sGLP's point 8), built on `GLP-anonreader` `bbff3070` and held until the refused programs are fixed (GLP to Integration, 09:35 UTC).  sGLP's two (`sglp/self.glp:90`, `monitor.glp:71`): built on `sGLP-anon`, complete (Code to sGLP, 2026-10-14).  GSG's one (`spm/gsg/self.glp:393`, `has_pending_offer`'s `_?`): GLP's routing reached Integration at 22:00 UTC; Code builds it in GSG's file from GLP-Spec and GSG's paper and reports to GSG (to Code and GSG 22:01 UTC).  State: with Code; then the three merge.
 
 ### Integration's own --- tasked 2026-10-11 15:53 UTC
 
+- The reserved type `Output` on `main` `982a3389` across five owners in one merge (Code, 2026-10-14 09:09 UTC); the harness's part with it.  Two tiers on `main` `0aa095db` (Udi's yes, 2026-10-14; Code 10:21 UTC): `GLP_SECTIONS` runs named sections, `test/run_fast.sh` 156 s; the fast tier at every merge, the full suite every 3-4 hours, its last green commit kept in `GLP/CLAUDE.md`; subagents in parallel, every run serialised by a lock.
 - Done: the harness keeps `dart test`'s and `flutter test`'s raw output in `tmp/suite_q_dart.txt` and `suite_q_flutter.txt`; the merged branches and worktrees gone; `GLP/docs/ma/HOW-TO-RUN.md` rewritten and run; 14 of the manual's 15 copies of TGLP replaced by pointers (Code #7, 2026-10-12 04:10 and 07:04 UTC).  The manual's §3.5 sentence went on GLP's task, `eb7de480` (Code #7, 2026-10-12 09:02 UTC).
 - The negative fixtures: six of seven pairs on `main` `198977fb`, 15 REPL checks and `neg_check_paths_test.dart` (Code #8, 2026-10-13 00:57 UTC).  Pair 7, SRSW in a module no entry point reaches, waits on the unreached-module check GLP ruled at 08:02 UTC.  State: with Code.
 
