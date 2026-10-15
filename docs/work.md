@@ -12,23 +12,27 @@ The list is `git -C /Users/udi/Grassroots/GLP worktree list`.  A worktree is mad
 
 ## Items
 
-Open only; a merged or rejected item leaves the list, git holding it.  Rewritten 2026-10-12 08:30 UTC by Integration #3 to what is open, amended 2026-10-14 22:02 UTC by Integration #4; the mail is authoritative where the two differ.
+Open only; a merged or rejected item leaves the list, git holding it.  Rewritten 2026-10-12 08:30 UTC by Integration #3 to what is open, amended 2026-10-15 21:25 UTC by Integration #4; the mail is authoritative where the two differ.
 
 ### `main`
 
 - **`gap` is on `main` since 2026-10-10** (Code #6, 12:04 UTC: `372f062e`, 461 commits).  Every owner's branch goes off `main`.  The suite on `main` at `6a702717`: 4096 passed, 0 failed, 93 known red, after `bonds_v2` and `programs/grassapp` went (Code #8, 2026-10-13 09:47 UTC).
 - **Unmerged branches** (measured 2026-10-13 08:14 UTC, `git branch --no-merged main`): `Currencies-bonds-boot` (3 ahead, `414acfc5`, `bonds_v2` mad_boots' `tee` and `actor_dispatch`; spent, `bonds_v2` deleted), `GLP-gapfix` (1, head reader matching only an unbound goal writer), `GLP-oom` (4, a guard-suspension fix and three PROPOSAL commits awaiting GLP), `GLP-r3c` (7, weeding round three), `IGLP-qparams` (3, question parameters, which vGLP's changed compilation may have overtaken).  `GLP-bookdel` and `GLP-import` are on `main`.
 
+### CSSN --- THE HIGHEST PRIORITY, IN CODE TOO (Udi, 2026-10-15, reported by Coordination 17:49 UTC)
+
+- WWW 2027: abstract Oct 18, paper Oct 25 AoE.  CSSN's tasks rank first in Code's queue.
+- The port is on `main` `2557a08a` (Code #8, 2026-10-15 20:35 UTC): full suite 4281 passed, 0 failed, `KNOWN_RED_CHECKS` 93 to 11, the 11 GSG's super-app hosting CSSN's mini-app, sent to GSG.  `cssn/mad_boot` and `cssn_v2_isolate_test` went with it: Integration's docs (`docs/ma/README.md`, `HOW-TO-RUN.md`, `docs/known-issues.md`) to Code 21:24 UTC; a new multi-isolate boot of the village asked of CSSN and GLP (IGLP) 21:24 UTC.
+- CSSN's tasks of 2026-10-15 (`Code_inbox.md` 17:29, 17:50, 17:58, 19:54, 19:55 UTC): two working examples, A the bridge entry `cssn_ui/3`, B the simulation `programs/cssn/sim`; the contract revised (CSSN SGLP `c2b8a49`); three vGLP modules, vGLP's module change in (`a89a751`).  State: with Code.
+- B's reach to sGLP (Code #9, 20:59 UTC, Blocking: yes): the root `programs/self.glp` exposing `sglp#monitor` asked of GLP, `transform.sh` taking a source outside `programs/sglp` asked of sGLP, 21:24 UTC; each answers Code.
+- `main_cssn.dart` beside `main_coins.dart` (CSSN, 17:29 UTC; Udi wants the platform shown in the grassroots app, reported by CSSN): Code builds it from CSSN Section 8.2 after CSSN's opaque-types part and reports to GLP and CSSN (to Code 21:24 UTC).
+- `programs/jurix/contracts.glp`'s contract `cssn`: Legal's, tasked 2026-10-09 18:46 UTC; not re-verified since.
+
 ### vGLP's old volition-guard form leaves the language --- since 2026-10-04
 
 - **On `main` since 2026-10-11** (`1fbe20a7`): IGLP's Dart bridge (`glp_multiagent/lib/ui_runtime/bridge.dart`); Currencies' coins, sovereign and bonds agents in vGLP's revised syntax; GSG's interfaces of `coins/3` and `sovereign/3` and its scripted persons; IGLP's manifests, tests and fixture `tests/vglp/one_clause/responder.vglp`.  GPBD's request of 2026-10-04 15:55 UTC is met; GPBD told 2026-10-12 08:26 UTC.
-- **Ports left**: CSSN's two (`childsafe/agent.vglp` 33 old clauses, `child_agent.vglp` 24): CSSN's task (`Code_inbox.md` 2026-10-09 19:37 UTC), in one merge with vGLP's retirement of the mediator in `cssn` and IGLP's `cssn_v2_isolate_test.dart` and `program_compilation_test.dart`, vGLP and GLP asked 2026-10-09.  GSG's three (`grassapp/grassapp_agent.vglp` 21, `social/graph/core/agent.vglp` 8, `core/home.vglp` 6): a rewrite from GSG's paper, not a port (Code #7, 2026-10-11 03:24 UTC): GSG's port, items 1 and 2, on `main` `dfd9e0b9` (Code #8 to GSG, 2026-10-12 22:48 UTC); `grassapp_agent.vglp` goes with `programs/grassapp` (one copy of the currency, below); `social/graph/core/agent.vglp` not re-measured.
+- **Ports left**: CSSN's is on `main` `2557a08a` (2026-10-15).  GSG's three (`grassapp/grassapp_agent.vglp` 21, `social/graph/core/agent.vglp` 8, `core/home.vglp` 6): a rewrite from GSG's paper, not a port (Code #7, 2026-10-11 03:24 UTC): GSG's port, items 1 and 2, on `main` `dfd9e0b9` (Code #8 to GSG, 2026-10-12 22:48 UTC); `grassapp_agent.vglp` goes with `programs/grassapp` (one copy of the currency, below); `social/graph/core/agent.vglp` not re-measured.
 - **Then**: vGLP retires the deployed mediator (`med.glp`, `ui/mediator.glp`, `vGLP/docs/decisions.md:112`) and IGLP the old protocol in `runtime.dart`; and one last merge moves vGLP's compiler and the display declaration to the new AST (30 sites, from vGLP's Definitions) and takes the old form out of the parser, the AST, `isVolitionGuarded`, `test/vglp`'s 86 and the harness's three N re-emit checks (to Code 2026-10-10 09:50 UTC; GSG and vGLP told).  State: waits on CSSN's port, and on a measure that GSG's left no old clause.
-
-### CSSN --- active again since 2026-10-09 (Udi)
-
-- `programs/jurix/contracts.glp`'s contract `cssn` (`send` without `friend(f)` at the sender; "eighteen"): Legal's, tasked by Legal 2026-10-09 18:46 UTC with its two language changes of 18:43 UTC.  State: with Code.
-- The port, several parents per child, the refusal of a cycle of two, the `~` sites, the village: CSSN's one task, above.  CSSN's 8 known-red checks (its artefact) leave `KNOWN_RED_CHECKS` with it.
 
 ### GNA's two multi-owner items --- since 2026-10-04
 
@@ -57,7 +61,7 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 
 ### One copy of the currency --- GSG, 2026-10-12
 
-- On `main` `6a702717` (Code #8, 2026-10-13 09:47 UTC): `bonds_v2` and `programs/grassapp` deleted, `bonds/dated` the mini-app, `secure` moved, the meta-interpreter at `programs/social/graph/budget`, the phone's default the super-app.  Left: Coordination's Appendix B, the host and Currencies' row (told 2026-10-13 10:17 UTC); grassapp's names in `networking/CLAUDE.md:73, 80, 82` to GNA and in `GSG/sections/s7-prototype.tex:34` and `GSG/CLAUDE.md:7` to GSG (10:17 UTC).  The item leaves when Coordination closes it.
+- On `main` `6a702717` (Code #8, 2026-10-13 09:47 UTC): `bonds_v2` and `programs/grassapp` deleted, `bonds/dated` the mini-app, `secure` moved, the meta-interpreter at `programs/social/graph/budget`, the phone's default the super-app.  Left: Coordination's Appendix B, the host and Currencies' row (told 2026-10-13 10:17 UTC); grassapp's names in `networking/CLAUDE.md:73, 80, 82` to GNA (GNA, 2026-10-15 18:02 UTC: the test bed is the super-app on two phones; Code tasked) and in `GSG/sections/s7-prototype.tex:34` and `GSG/CLAUDE.md:7` to GSG (10:17 UTC).  The item leaves when Coordination closes it.
 
 ### Opaque types --- GSG, 2026-10-13
 
@@ -68,10 +72,6 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 - The template carries a calendar for a dated mini-app, a stream of dates the super-app writes from the device's clock, so `bonds/4` and `sovereign/4` are the hosted instances (Currencies 20:21 UTC, GB Appendix F; to GSG 20:27 UTC, Blocking: yes).
 - Decided (Udi, 2026-10-14, reported by vGLP to GSG 13:21 UTC): the template takes two parameters, D for the person channel (`PersonChannel(D) ::= Channel(PersonIn(D), Stream(Draw(D)))`, never closing, vGLP's Definition "Person Channel") and T for the mini-app's own channels; `procedure(D, T) miniapp(Key?, PersonChannel(D)?, SgChannel(T)?, Stream(Integer)?)`, the calendar written by the super-app.  Building on Code's `OpaqueMerge2` (6 ahead of `main` at 2026-10-14 22:02 UTC: the calendar `ad85841c`, the harness's SG comments, the root's `PersonIn(T)`).
 - State: with Code on `OpaqueMerge2`.
-
-### The anonymous reader leaves every clause --- GLP, 2026-10-14
-
-- The checker refuses `_?` and `_Name?` at every position (GLP-Spec `297db75`, Remark "Anonymous Variables"; TGLP `2424f4c`; Udi, 2026-10-14, on sGLP's point 8), built on `GLP-anonreader` `bbff3070` and held until the refused programs are fixed (GLP to Integration, 09:35 UTC).  sGLP's two (`sglp/self.glp:90`, `monitor.glp:71`): built on `sGLP-anon`, complete (Code to sGLP, 2026-10-14).  GSG's one (`spm/gsg/self.glp:393`, `has_pending_offer`'s `_?`): GLP's routing reached Integration at 22:00 UTC; Code builds it in GSG's file from GLP-Spec and GSG's paper and reports to GSG (to Code and GSG 22:01 UTC).  State: with Code; then the three merge.
 
 ### Integration's own --- tasked 2026-10-11 15:53 UTC
 
