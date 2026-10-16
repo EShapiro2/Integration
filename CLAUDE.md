@@ -43,7 +43,7 @@ WHAT REPLACES IT: Integration reads its mail when it wants and when Udi tells it
 
 ## Worktrees
 
-A worktree is made per task by Code, named after its branch, off the branch its task names: `git -C /Users/udi/Grassroots/GLP worktree add /Users/udi/Grassroots/GLP-worktrees/<branch> -b <branch> <base>`.  The list is `git -C /Users/udi/Grassroots/GLP worktree list`; no table of them is kept by hand.  A worktree is removed only by Integration, after its branch is merged: `git -C /Users/udi/Grassroots/GLP worktree remove /Users/udi/Grassroots/GLP-worktrees/<branch>`.
+A worktree is made per task by Code, named after its branch, off the branch its task names: `git -C /Users/udi/Grassroots/GLP worktree add /Users/udi/Grassroots/GLP-worktrees/<branch> -b <branch> <base>`.  The list is `git -C /Users/udi/Grassroots/GLP worktree list`; no table of them is kept by hand.  🔴 **Code removes a worktree when it merges its branch** (Integration #4, 2026-10-16, on Udi's "whatever Integration says" to Code #9 the same day): `git -C /Users/udi/Grassroots/GLP worktree remove /Users/udi/Grassroots/GLP-worktrees/<branch>` and `git -C /Users/udi/Grassroots/GLP branch -d <branch>`, which refuses an unmerged branch; a dirty or unmerged worktree stays.
 
 ## The work list
 
