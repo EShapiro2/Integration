@@ -8,11 +8,11 @@ One line per item: origin (inbox and `Date`), owner, branch, state (requested, f
 
 ## Worktrees
 
-The list is `git -C /Users/udi/Grassroots/GLP worktree list`.  Code removes a worktree when it merges its branch (`CLAUDE.md`, "Worktrees", 2026-10-16); the 50 merged and clean of 58 to go (to Code 2026-10-16 10:52 UTC).  A worktree is made per task by Code, named after its branch, off `main`; the branch's task is in `Code_inbox.md`.  No table of them is kept by hand.
+The list is `git -C /Users/udi/Grassroots/GLP worktree list`.  Code removes a worktree when it merges its branch (`CLAUDE.md`, "Worktrees", 2026-10-16); the 50 merged and clean went 2026-10-16 (Code #9, 11:05 UTC; list `/Users/udi/Grassroots/tmp/code9-wt-removed.txt`), 8 kept: `Currencies-bonds-boot`, `GLP-gapfix`, `GLP-oom`, `GLP-r3c`, `IGLP-qparams`, `Int-neg` (one uncommitted change), `OpaqueMerge2`, `OpaqueMerge3`.  A worktree is made per task by Code, named after its branch, off `main`; the branch's task is in `Code_inbox.md`.  No table of them is kept by hand.
 
 ## Items
 
-Open only; a merged or rejected item leaves the list, git holding it.  Rewritten 2026-10-12 08:30 UTC by Integration #3 to what is open, amended 2026-10-16 10:54 UTC by Integration #4; the mail is authoritative where the two differ.
+Open only; a merged or rejected item leaves the list, git holding it.  Rewritten 2026-10-12 08:30 UTC by Integration #3 to what is open, amended 2026-10-16 13:35 UTC by Integration #4; the mail is authoritative where the two differ.
 
 ### `main`
 
@@ -22,9 +22,11 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 ### CSSN --- THE HIGHEST PRIORITY, IN CODE TOO (Udi, 2026-10-15, reported by Coordination 17:49 UTC)
 
 - WWW 2027: abstract Oct 18, paper Oct 25 AoE.  CSSN's tasks rank first in Code's queue.
-- The port is on `main` `2557a08a` (Code #8, 2026-10-15 20:35 UTC): full suite 4281 passed, 0 failed, `KNOWN_RED_CHECKS` 93 to 11, the 11 GSG's super-app hosting CSSN's mini-app, sent to GSG.  `cssn/mad_boot` and `cssn_v2_isolate_test` went with it: Integration's docs and the harness's CSSN comments restated on `main` `d041f0dd` (Code #9, 21:45 UTC); a new multi-isolate boot of the village asked of CSSN and GLP (IGLP) 21:24 UTC.
+- The port is on `main` `2557a08a` (Code #8, 2026-10-15 20:35 UTC): full suite 4281 passed, 0 failed, `KNOWN_RED_CHECKS` 93 to 11, the 11 GSG's super-app hosting CSSN's mini-app, sent to GSG.  `cssn/mad_boot` and `cssn_v2_isolate_test` went with it: Integration's docs and the harness's CSSN comments restated on `main` `d041f0dd` (Code #9, 21:45 UTC); a new madGLP boot of the village decided by CSSN (Udi, 2026-10-16, reported by CSSN), Code's task C, no change of IGLP (CSSN #3, 11:03 UTC; GLP told 13:34 UTC).
 - CSSN's tasks of 2026-10-15 (`Code_inbox.md` 17:29, 17:50, 17:58, 19:54, 19:55 UTC): two working examples, A the bridge entry `cssn_ui/3`, B the simulation `programs/cssn/sim`; the contract revised (CSSN SGLP `c2b8a49`); three vGLP modules, vGLP's module change in (`a89a751`).  State: with Code.
 - B's reach to sGLP (Code #9, 20:59 UTC, Blocking: yes): the root exposes `sglp#monitor`, on `main` `d3e9590b` (GLP's yes, Udi, 2026-10-15, reported by GLP; Code #9 21:53 UTC).  The transformation, sGLP agreeing to Integration's form (21:28 UTC): `transform.sh` takes a source directory outside `programs/sglp`, its own list the default, and the root exposes the modules the transformed output needs, as Code measures them; sGLP's gate byte-identical (to Code and sGLP 2026-10-16 10:52 UTC).  CSSN answered Code's two paper gaps and its opaque part (CSSN #3, 2026-10-16 10:51 UTC).
+- CSSN's implementation is now vGLP's canonical CVA platform compiled from CSSN's contract (Udi, 2026-10-16, reported by CSSN; CSSN SGLP `f8d56d3`).  CSSN's request to vGLP for the CVA compiler (a menu of known persons, `Approval`, the app transaction Introduce friends, the contract's twenty-three schemas): forwarded 2026-10-16 13:33 UTC, Blocking: yes for CSSN's tasks D to G.
+- IGLP's linker for vGLP Section 6.3 (a `self.vglp` with procedures emitted as its directory's `self.glp`; the root `self.vglp` widget declarations only), which CSSN's shared `self.vglp` rests on: Code builds it on `vGLP-mod3` as compliance and reports to GLP (Code #9 11:54 UTC; Integration 13:34 UTC).
 - `main_cssn.dart` beside `main_coins.dart` (CSSN, 17:29 UTC; Udi wants the platform shown in the grassroots app, reported by CSSN): Code builds it from CSSN Section 8.2 after CSSN's opaque-types part and reports to GLP and CSSN (to Code 21:24 UTC).
 - `programs/jurix/contracts.glp`'s contract `cssn`: Legal's, tasked 2026-10-09 18:46 UTC; not re-verified since.
 
