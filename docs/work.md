@@ -4,7 +4,7 @@
 
 🔴 **Udi, 2026-10-03: THE PAPER IS THE ONLY SOURCE OF TRUTH** ("what is there to test?"): a question the paper answers is not settled by experiment on the code, and a gap is fixed before the work on it goes on.  A paper may print a program in a readable surface syntax; the term form in the repository is what must typecheck and run (claude.md, "Code"; to Code 2026-10-04 09:12 UTC).
 
-One line per item: origin (inbox and `Date`), owner, branch, state (requested, forwarded, in progress, merged, rejected), waiting on.  An item leaves when merged or rejected.  Kept by Integration.
+One line per item: origin (inbox and `Date`), owner, branch, state (requested, forwarded, in progress, merged, rejected), waiting on.  An item leaves when merged or rejected.  Kept by Code.
 
 ## Worktrees
 
@@ -12,12 +12,18 @@ The list is `git -C /Users/udi/Grassroots/GLP worktree list`.  Code removes a wo
 
 ## Items
 
-Open only; a merged or rejected item leaves the list, git holding it.  Rewritten 2026-10-12 08:30 UTC by Integration #3 to what is open, amended 2026-10-16 17:46 UTC by Integration #4; the mail is authoritative where the two differ.
+Open only; a merged or rejected item leaves the list, git holding it.  Rewritten 2026-10-12 08:30 UTC by Integration #3 to what is open, amended 2026-10-16 17:46 UTC by Integration #4 and 2026-10-17 18:54 UTC by Code #10, when the Code project took over Integration; the mail is authoritative where the two differ.
 
 ### `main`
 
-- `main` at `9f8db8a2` (2026-10-16 15:08 UTC).  The last full suite: `9edea193`, 4283 passed, 0 failed, 11 known red, the super-app's hosting of CSSN's mini-app (`GLP/CLAUDE.md` `adfcbe3c`).  Two tiers since 2026-10-14 (Udi): the fast tier at every merge, the full suite every 3-4 hours.
-- **Unmerged branches** (measured 2026-10-16 17:46 UTC): `CSSN-cva` (1, CSSN's contract in Jurix's term form), `vGLP-cva` (3, act schemas in the CVA compiler), `vGLP-nowild` (4), `sGLP-meet` (2), in progress; `GLP-gapfix` (1), `GLP-oom` (4, three PROPOSAL commits awaiting GLP), `GLP-r3c` (7, weeding round three), `IGLP-qparams` (3, possibly overtaken by vGLP's compilation), held since September or early October; `Currencies-bonds-boot` (3, `414acfc5`, spent with `bonds_v2`) and `OpaqueMerge2` (6, `534f69b6`, a WIP superseded by `OpaqueMerge3`, merged), spent, to delete with Udi's yes.
+- `main` at `4595118a` (2026-10-16, vGLP's CVA compiler part C merged; fast tier VG QD 4177/0, Code #9 18:22 UTC).  The last full suite: `9edea193`, 4283 passed, 0 failed, 11 known red, the super-app's hosting of CSSN's mini-app (`GLP/CLAUDE.md` `adfcbe3c`).  Two tiers since 2026-10-14 (Udi): the fast tier at every merge, the full suite every 3-4 hours.
+- **Unmerged branches** (measured 2026-10-16 17:46 UTC, `vGLP-cva` merged since at `4595118a`): `CSSN-cva` (1, CSSN's contract in Jurix's term form), `vGLP-nowild` (4, held: every importer of a compiled module would restate generated types; vGLP and GLP asked 2026-10-16 17:42 UTC), `sGLP-meet` (built and rerun, not merged: swap the reruns from `tmp/sglp-meet/tmp/` into `tmp/` under the canonical names, then the full suite; Code #9, 2026-10-16 19:26 UTC), in progress; `Int-neg` (pair 7, waits GLP); `GLP-gapfix` (1), `GLP-oom` (4, three PROPOSAL commits awaiting GLP), `GLP-r3c` (7, weeding round three), `IGLP-qparams` (3, possibly overtaken by vGLP's compilation), held since September or early October; `Currencies-bonds-boot` (3, `414acfc5`, spent with `bonds_v2`) and `OpaqueMerge2` (6, `534f69b6`, a WIP superseded by `OpaqueMerge3`, merged), spent, to delete with Udi's yes.
+
+### Code's tasks of 2026-10-17 --- Coordination #6, `Code_inbox.md` 17:57 UTC
+
+- **2. One copy of each contract, with its owner.**  The contracts in `programs/jurix/contracts.glp` and `programs/vglp/cva/contracts.glp` move to their owners' directories, one file each --- `social_graph` to `programs/social/graph/`, `currency` to `programs/currencies/coins/`, `cssn` to `programs/cssn/`, `federation` to `programs/federation/` --- and the copies go; the checker's own fixtures stay in `programs/jurix`; Jurix's checker and vGLP's `cvac` load from the owners' paths and nothing else; `test_jurix.sh` and the VG section follow; each of the six owners told what moved where.  Owner: Code (the layout), Jurix and vGLP (the loaders).  State: requested.
+- **3. The cascade script** (claude.md "Code"; Coordination 5.7).  One script of Code's, run from the repository root with a contract's name: the checker and its verdict, the VMAT form (`compile_named`), the `.vglp` (`cvac`), the `.glp`, the run under sGLP with the owner's profiles; six artefacts and a manifest into `programs/<owner>/cascade/`, one commit tagged `cascade/<contract>/<date>`, the suite re-running it for every recorded contract.  First the social graph, whose profiles sGLP has; then the currency and CSSN as their owners answer for the legal text and the profiles.  Owner: Code.  State: requested; waits on 2.
+- **4. The approval rule covers every language of the cascade**: binds Code's briefs from here (`Code/CLAUDE.md`); nothing to do.
 
 ### CSSN --- THE HIGHEST PRIORITY, IN CODE TOO (Udi, 2026-10-15, reported by Coordination 17:49 UTC)
 
@@ -73,7 +79,7 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 
 - vGLP's 2026-10-16 12:17 UTC items (Udi approved; vGLP `56d898f`): a question drawn only once whole; "an interactive type has a Stream only at a position the person writes"; `Card` renamed `Approval` ("card" banned from every paper body, Udi, 2026-10-16, to_all 15:16 UTC).  Code #9 to Integration, 13:57 UTC: item 4 refuses Currencies' `Offered ::= Stream(Coin)` (coins) and `Stream(Instrument)` (bonds, sovereign) and GSG's copy `COffer`.  Currencies asked to decide `Offered` (Code recommends a List), GSG's copy following it, IGLP's `bridge_test` and `coins_screen_test` compliance, the `Approval` sweep Code's (to Currencies and Code 2026-10-16 17:45 UTC).  Blocking: yes for vGLP.
 
-### Integration's own --- tasked 2026-10-11 15:53 UTC
+### Code's own (Integration's until 2026-10-17) --- tasked 2026-10-11 15:53 UTC
 
 - The reserved type `Output` on `main` `982a3389` across five owners in one merge (Code, 2026-10-14 09:09 UTC); the harness's part with it.  Two tiers on `main` `0aa095db` (Udi's yes, 2026-10-14; Code 10:21 UTC): `GLP_SECTIONS` runs named sections, `test/run_fast.sh` 156 s; the fast tier at every merge, the full suite every 3-4 hours, its last green commit kept in `GLP/CLAUDE.md`; subagents in parallel, every run serialised by a lock.
 - Done: the harness keeps `dart test`'s and `flutter test`'s raw output in `tmp/suite_q_dart.txt` and `suite_q_flutter.txt`; the merged branches and worktrees gone; `GLP/docs/ma/HOW-TO-RUN.md` rewritten and run; 14 of the manual's 15 copies of TGLP replaced by pointers (Code #7, 2026-10-12 04:10 and 07:04 UTC).  The manual's §3.5 sentence went on GLP's task, `eb7de480` (Code #7, 2026-10-12 09:02 UTC).
