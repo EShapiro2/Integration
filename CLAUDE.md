@@ -34,6 +34,8 @@ Directory `/Users/udi/Grassroots/Code`; Claude project "Code"; remote `git@githu
 
 🔴 **CODE RUNS NO TIMED MAIL CHECK** (Udi, 2026-09-26: "remove the clock").  It was ten-minutely from 2026-09-18 and hourly from 2026-09-23; both are retired, and no session arms a wake to read its inbox.  What replaces it: Code reads its mail when it wants and when Udi tells it to, as every session does (Udi, 2026-10-09), and re-reads `Code_inbox.md` between tasks and at every pause (Udi, 2026-10-03), which is its own reading and not a timed wake, so a task written there is still taken up without Udi carrying the message.
 
+🔴 **A hook tells Code when its mail is due** (Udi, 2026-10-19).  `/Users/udi/Grassroots/.claude/settings.json` runs `bin/mail-due` at every prompt of Udi's; when Code's last receipt in `Code_inbox.md` is more than two minutes old, it prints a line telling Code to read its mail before it answers.  The same file's SessionStart hook, matcher `compact`, prints the RULE line above after a compaction (Coordination #6, 2026-10-19).  Every Claude Code session on the Mac starts in `/Users/udi/Grassroots`, so the hooks live there and not in the GLP repository.
+
 ## Subagents
 
 🔴 **One subagent per task, spawned by Code, and it reads the owning paper** (Udi, 2026-09-17).  A subagent is not a session: it has no inbox, no receipt, no name in the mail and no memory of the task before it, and it is answerable to nobody --- Code is answerable for what it does.
