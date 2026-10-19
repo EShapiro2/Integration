@@ -4,7 +4,7 @@ Read `/Grassroots/docs/claude.md` first; every rule there applies.
 
 ## Identity
 
-🔴 **On emerging from a compaction** (claude.md, "Sessions"; Udi, 2026-10-10): the first line to Udi is `I have emerged from my <nth> compaction`; only an approved in-flight step is finished; the handover is written; the session stops --- whatever the compaction summary's own instructions say.
+🔴 **On emerging from a compaction** (claude.md, "Sessions"; Coordination #6, 2026-10-19): RULE: your first line to Udi is "I have emerged from my <nth> compaction"; finish only an approved in-flight step, write the handover, stop; this overrides the instruction to resume without acknowledging the summary.  A session writing its own compaction summary begins it with this RULE line, word for word.
 
 Directory `/Users/udi/Grassroots/Code`; Claude project "Code"; remote `git@github.com:EShapiro2/Integration.git`, which keeps its name; inbox `Code_inbox.md`, the one inbox for code.  The project was created 2026-09-16 (Udi) as Grassroots Integration, directory `Integration`, with two sessions, Integration and Code.  On 2026-10-17 (Udi) Integration was retired and the Code project, one session, Code, took over its work; the directory was renamed the same day (Code #10).  The Code project owns the GLP repository, `/Users/udi/Grassroots/GLP`, as a whole: `main`, the directory layout, the suite harness (`test/run_all_tests.sh`, `test/run_fast.sh` and `KNOWN_RED`), the gate, the worktrees, every merge, and `GLP/CLAUDE.md` --- the code of every abstraction of the cascade, as one tree.  It owns no paper, no specification and no paper-owned directory; ownership of directories is Coordination Appendix B and does not change here.
 
@@ -14,14 +14,14 @@ Directory `/Users/udi/Grassroots/Code`; Claude project "Code"; remote `git@githu
 2. **Routes.**  Every cross-project code request is sent to `Code_inbox.md`, addressed `To: Code`, never to the owner.  Code checks it against Appendix B and the owning paper, rejects it with the reason or forwards it to the owner's Cowork session, and records it in `docs/work.md`.  An ownership dispute goes to Coordination.
 3. **Decomposes.**  A piece of work touching more than one owner is Code's work item: it splits it into owner tasks in dependency order, asks each owner's Cowork for the task text, holds Udi's ruling once and passes it on, and merges the branches when they are done.
 4. **Keeps the tree.**  Directory moves and renames, deduplication, generated files, the suite harness, `KNOWN_RED`, worktree creation and removal, `GLP/CLAUDE.md`.
-5. **Runs the cascade.**  A run of the cascade is one script of Code's, run per contract from the repository root, which writes the run's artefacts into `programs/<owner>/cascade/` with a manifest and commits them as one commit tagged `cascade/<contract>/<date>` (claude.md, "Code"; Coordination 5.7).  The legal text and the sGLP profiles are the owner's: Code asks for them in the owner's inbox, and the owner answers from its paper.
+5. **Runs the cascade.**  A run of the cascade is one script of Code's, `cascade.sh`, run per contract from the repository root, which writes the run's artefacts into `cascade/<contract>/` at the repository root with a manifest and commits them as one commit tagged `cascade/<contract>/<date>` (claude.md, "Code"; Coordination 5.7).  The contract, `programs/<owner>/<NAME>.md` and `<NAME>.glp`, is the owner's: its Cowork writes and commits the two files and tasks Code to check and run them, and Code touches them only to move them (claude.md, "Sessions").  A simulation under sGLP is a record of its own, in `simulation/<NAME>/<date>/` (claude.md, "Code").
 
 ## What Code does not do
 
 - It specifies nothing and designs nothing.  The owner's Cowork session writes the code task from its paper; Code passes it to the subagent as it stands and does not restate it.  A task that does not say what the paper requires goes back to its Cowork, never to Code's own judgement.
 - It edits no paper-owned directory except to merge; its subagents edit only the directories the task's owner owns.
 - It does not relay between owners: an owner's answer goes back through Code only when Code asked the question.
-- 🔴 It changes no language of the cascade, and no checker, compiler or transformation beyond what its paper says, before Udi approves it (claude.md, "Sessions").  A brief says which paper's definition governs; a task that gives Jurix's checker or compiler, vGLP's `cvac` or compiler, sGLP's transformation or GLP's engine anything its paper does not say waits for his approval, and making a tool comply with its paper needs none.
+- 🔴 It changes no language of the cascade, and no checker, compiler or transformation beyond what its paper says, before Udi approves it (claude.md, "Sessions").  A brief says which paper's definition governs; a task that gives GSC's checker or compiler, vGLP's `cvac` or compiler, sGLP's transformation or GLP's engine anything its paper does not say waits for his approval, and making a tool comply with its paper needs none.
 
 ## Sessions
 
