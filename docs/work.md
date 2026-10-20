@@ -18,7 +18,7 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 
 - `main` pushed at `81f24847` with every cascade tag (Code #11, 2026-10-19 17:59 UTC).  `KNOWN_RED_CHECKS` 59: the 11 of the super-app's hosting of CSSN's mini-app (GSG's), and 48 that Currencies' GC.glp and GFWC's GFWC.glp make red in GSC's old term form, both owners dormant, each entry off when its owner writes the new form (`ec037ab6`).  The full suite at `1f9a642d`: 4911, 4863 passed, the 48 since made known red; the last full run with nothing failed stays `84fe5301`.  Two tiers since 2026-10-14 (Udi): the fast tier at every merge, the full suite every 3-4 hours.
 
-- **Unmerged branches** (measured 2026-10-16 17:46 UTC): `vGLP-nowild` (paused, uncommitted work; the root's type Widget asked of GLP 2026-10-19 11:45 UTC), `Int-neg`, `GLP-gapfix`, `GLP-oom`, `GLP-r3c`, `IGLP-qparams`, held since September or early October; `Currencies-bonds-boot` and `OpaqueMerge2`, spent, to delete with Udi's yes.
+- **Unmerged branches** (measured 2026-10-16 17:46 UTC): `vGLP-nowild` (paused, uncommitted work; the root's type Widget asked of GLP 2026-10-19 11:45 UTC), `Int-neg`, `GLP-gapfix`, `GLP-oom`, `GLP-r3c`, `IGLP-qparams`, held since September or early October.
 
 ### The queue --- Code #12's handover, `Code_inbox.md` 2026-10-20 22:14 UTC
 
