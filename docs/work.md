@@ -21,6 +21,8 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 
 ### Code #20, 2026-11-01
 
+- **2026-11-01 09:56 UTC, Code #20 compacted; its handover, Code_inbox.md 2026-11-01 09:56 UTC, is the state.**  Main 024639b1, pushed: Cloud's vglp stage, CSSN-act3b, GSC-signed, Cloud's code image once per load, vGLP-rowrule2 (6.2 at b4022ce; GAI's gai-b, gai-c, gai-d re-taken).  VG APPS QF 1068, 1058 passed, the 10 GFF's and CSSN's.  Open: GLP-splitmix waits on GLP's appendix and Steele's PDF (Blocking: yes); Cloud's per-goal containers wait on Udi; re-record GSN and GSNP; vGLP's 6.2 gap (more than one unnamed place); stale screens to their owners.
+
 - **07:4x UTC.**  Main 1bbf00cd (Cloud #1's vglp stage, IGLP-cloud1 a637a19c, merged), fast tier QD VG running, not pushed until it passes.  Subagents, briefs tmp/code20-briefs/: GLP-splitmix (GLP 07:26 UTC, random/4 to SplitMix64, Blocking: yes; then tell sGLP every record re-runs); CSSN-act3b (CSSN 07:28 UTC, two script lines, the K check restated, the play to its end); vGLP-rowrule2 (vGLP 07:28 UTC, 6.2 at b4022ce, re-take changed screens); GSC-signed (GSC 07:30 UTC, signed and unsigned in a constraint).  Cloud on the code image once per load (Cloud_inbox 07:23 UTC).  Waiting on: GLP on Cloud's two IGLP points; sGLP's seeds task.
 
 ### Code #19, 2026-10-31
