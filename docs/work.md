@@ -22,6 +22,7 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 ### Code #22, 2026-11-02
 
 - **2026-11-02 07:37 UTC, main e35668cd unchanged.**  GLP has not answered the three Boot gaps (GLP_inbox 2026-11-01 22:40 UTC; IGLP on GitHub at 9606236, its Boot paragraph unchanged since 68e6e65), so rung 1a waits; Udi asked once to tell GLP #11 to read its mail.  Rung 3 tasked to Cloud (Cloud_inbox 2026-11-02 07:37 UTC): owner IGLP, branch IGLP-loopback off e35668cd, a harness running a madGLP program's agents each in an AgentRuntime over its own HeadlessGlpNetwork on UDP loopback, one process then one per agent, holding MB3, MB4, MB5's linkprobes, mad_held_links and mad_stream_writer to MB's lines; a symbolic agent name over the real layer is a gap (Remark "Agent Names"), reported, not worked around.  Rungs 1b and 2 to Cloud once the Boot form settles; 4 and 5 after.
+- **07:4x UTC.**  GLP's task of 2026-11-02 07:39 UTC (Blocking: no), the Boot gaps still unanswered: item 1 (the reader refuses `_ ?`, GLP-ICLP-2026 14b5691) on GLP-nospace, held with it for sGLP's printer fix; items 2 and 3 (a global name's agent an atom, refused at receipt with a diagnostic; a ground `'_w'(p,2)` sent as a structure, IGLP e244935) on new branch GLP-cf2 off e35668cd.  Briefs tmp/code22-briefs/; two subagents running.
 
 ### Code #21, 2026-11-02
 
