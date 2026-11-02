@@ -29,6 +29,7 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 - **09:13 UTC.**  The five programs/social boots are GSC's (Udi, 2026-11-02, to Code #22: "gsc is responsible not gsg"): sent to GSC, withdrawn from GSG; Coordination asked to bring Appendix B to it.
 - **10:18 UTC, main e35668cd unchanged; Code #22 compacted and hands over (Code_inbox.md 2026-11-02 10:18 UTC).**  Arrived 10:16-10:17 UTC, not acted on: GLP's answer to the code-format gap (IGLP 1e01638; GLP-cf2 to respawn), GSC's task for its seven boots (Blocking: yes for maGLP-gkk's merge), GSC's yes to re-take the GKK and GSG screens on main.
 - **10:20 UTC.**  Udi: keep going though compacted.  Spawned: GSC-boot (off maGLP-gkk 98b9dd1f, GSC's seven boots, its task of 10:17 UTC); GLP-cf2 (GLP's 10:16 UTC, IGLP 1e01638); GSC-screens (off main, GKK and GSG screens re-taken, GSC's yes of 10:17 UTC).  Currencies and GAI have not read 08:20 UTC.
+- **10:32 UTC.**  GSC-boot done, 0733f17f: GSC's seven boots on the new Boot; SG APPS 274/302, the 28 red gsnp 11, gai 7, gc 3, GFF 7 (GFF's compile.sh --check red on main too, routed to GFF before).  GAI's task arrived 10:24 UTC: GAI-boot spawned off GSC-boot.  GAI's yes to re-take gai-e-bob-friends and gsnp-b-bob-forward on main waits for GSC-screens to free the simulator.  Currencies has not read 08:20 UTC.
 
 ### Code #21, 2026-11-02
 
