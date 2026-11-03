@@ -44,6 +44,7 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 - **10:20 UTC.**  Main 39b62557 pushed: Section NET (Code-net 9a50002c), networking's own tests in the full suite, outside the fast tier (GLP/CLAUDE.md, Two tiers); 793 tests, two of them racing (core headless_rendezvous_servers_test:116, networking/test grassroots_network_rendezvous_session_test:181), to GNA 10:20 UTC as one task, possibly Dan's first.
 - **10:43 UTC.**  GFWC is dormant (Udi, 2026-11-03, to Code #22): its rung 2 task of 07:20 UTC waits; do not list it as waiting.  Cloud's GSC-rung2 c1d3f55 and GAI-rung2 b3a12f5 merged on main 56d6911f, TY MB SG APPS running.  GNA 10:36 UTC: task P (both rendezvous tests wait for the server's onPeerConnected), held for Dan.
 - **10:45 UTC.  NOTHING IS HELD FOR DAN (Udi, 2026-11-03, to Code #22: "no Dan! we are doing what we can till I say so").**  GNA-race spawned for task P.  Main 56d6911f pushed (TY MB SG APPS 345/352, GFF's 7); GSC and GAI told.  GLP 10:42 UTC: IGLP-route (a destination a key or a name, item 1) and IGLP-declare (declare/1, remove/1, GlpNetwork's rendezvous and acknowledge, items 2 and 3) spawned.  Coordination 10:45 UTC: Appendix B gives the boots and the new Boot to GSC (184aa9d).
+- **11:06 UTC.**  Main 3c68e493 pushed: IGLP-route 3b15e733 (a destination a key or a name in a simulation; MB SL MA QD 2627/2627) and GNA-race ee03dc9f (task P; NET 793/793).  GLP and GNA told.
 
 ### Code #21, 2026-11-02
 
