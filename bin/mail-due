@@ -23,4 +23,5 @@ if [ -f "$ledger" ]; then
     printf '%s\n' "$open_entries" | sed 's/^/  /'
   fi
 fi
+/Users/udi/Grassroots/Code/bin/pr-check
 exit 0

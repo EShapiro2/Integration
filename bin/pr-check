@@ -1,0 +1,20 @@
+#!/bin/bash
+# Names each open pull request on EShapiro2/GLP that Code has not yet told Udi of (Udi, 2026-11-03, to Code #22: "when you read mail (or every so often) check for pull requests and lmk").  Asks GitHub at most every ten minutes, keeping the last answer in tmp/; a pull request is "told" once its number and last update are in Code/docs/pr-ledger.txt (bin/pr-ack).  Prints nothing when there is nothing new, and never fails the prompt.
+ledger=/Users/udi/Grassroots/Code/docs/pr-ledger.txt
+cache=/Users/udi/Grassroots/tmp/code-pr-cache.txt
+touch "$ledger"
+if [ ! -f "$cache" ] || [ $(( $(date +%s) - $(stat -f %m "$cache") )) -gt 600 ]; then
+  curl -s -m 8 "https://api.github.com/repos/EShapiro2/GLP/pulls?state=open&per_page=100" \
+    | python3 -c 'import json,sys
+try:
+  d=json.load(sys.stdin)
+  for p in d: print("#%d | %s | %s | %s" % (p["number"], p["updated_at"], p["user"]["login"], p["title"]))
+except Exception: sys.exit(1)' > "$cache.new" 2>/dev/null && mv "$cache.new" "$cache" || rm -f "$cache.new"
+fi
+[ -f "$cache" ] || exit 0
+new=$(while IFS= read -r l; do k=$(printf '%s' "$l" | cut -d'|' -f1-2 | sed 's/ *$//'); grep -qxF "$k" "$ledger" || printf '%s\n' "$l"; done < "$cache")
+if [ -n "$new" ]; then
+  echo "Code: open pull requests on EShapiro2/GLP not yet told to Udi (tell him, then run Code/bin/pr-ack):"
+  printf '%s\n' "$new" | sed 's/^/  /'
+fi
+exit 0

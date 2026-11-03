@@ -1,0 +1,6 @@
+#!/bin/bash
+# Records every open pull request in tmp/code-pr-cache.txt as told to Udi (Code #22, 2026-11-03).  Run only after telling him.
+ledger=/Users/udi/Grassroots/Code/docs/pr-ledger.txt
+cache=/Users/udi/Grassroots/tmp/code-pr-cache.txt
+touch "$ledger"
+[ -f "$cache" ] && while IFS= read -r l; do k=$(printf '%s' "$l" | cut -d'|' -f1-2 | sed 's/ *$//'); grep -qxF "$k" "$ledger" || { echo "$k" >> "$ledger"; echo "told: $l"; }; done < "$cache"
