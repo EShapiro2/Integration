@@ -14,4 +14,13 @@ now_s=$(date -u +%s)
 if [ $((now_s - then_s)) -gt 120 ]; then
   echo "Code: the last receipt in Code_inbox.md is $who's at $ts UTC, more than two minutes ago.  Before you answer Udi, read your mail: /Users/udi/Grassroots/Coordination/bin/mail-read Code \"Code #N\", your own name, and act on it."
 fi
+# Every entry addressed to Code since the ledger's cutoff must be in Code/docs/mail-ledger.txt, put there by bin/mail-ack once acted on; any other is named here, so an entry a read cut off is never lost (Code #22, 2026-11-03; Udi: "what can we do so this NEVER happens again?").
+ledger=/Users/udi/Grassroots/Code/docs/mail-ledger.txt
+if [ -f "$ledger" ]; then
+  open_entries=$(/Users/udi/Grassroots/Code/bin/mail-entries | grep -vxF -f "$ledger")
+  if [ -n "$open_entries" ]; then
+    echo "Code: these entries of Code_inbox.md are not yet acted on (not in Code/docs/mail-ledger.txt); read each in full and act on it, then run Code/bin/mail-ack with its Date:"
+    printf '%s\n' "$open_entries" | sed 's/^/  /'
+  fi
+fi
 exit 0
