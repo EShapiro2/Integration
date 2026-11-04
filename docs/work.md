@@ -21,6 +21,8 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 
 ### Code #23, 2026-11-04
 
+- 20:59 UTC: vGLP-view done on its branch (7d857bcd, 75fb50e1, 1aa5da36; pushed, HELD): the compiler prints the bare request question and the five-place view with the key; VG 720 green.  Code's work item "vGLP view": merge all at once --- IGLP's bridge (named_widgets.dart, tab_screen.dart; request to GLP), the eight apps' self.glp/person.glp/plays.glp (requests to GSC, Currencies, GAI, GFF with lines), then Code re-makes the records and the apps' screens and swaps OPEN_TYPES' GDO/GDC entries to the request_r names.  Each owner's branch off vGLP-view.  vGLP told.
+
 - 20:31 UTC: GLP-clock merged, main 189a9c2e: start_clock/1, rated/2, step_clock/2 (GLP-Spec 5fd9a15), SimClock per GlpRuntime, block A33b, Dart test; GLP told.  Running: vGLP-view.  Waiting: GSC (sas form), vGLP (pragma gaps), Currencies (DGC's Acceptance), Cloud #2 (task 4).
 
 - 20:22 UTC: GSC-sas second spawn stopped: the settled form's bare constants cannot be refined to Constant under TGLP; Code recommends sas/6 with a Vars list and a 7-place form with a constraint (GSC told 20:2x UTC, Blocking: yes; draft reader diff kept in tmp/code23-briefs/).  vGLP #23's two tasks (20:08, 20:18 UTC): pragmas.sh's replacement rule done uncommitted on vGLP-pragmas2, stopped on two gaps (same-title own clause, GDC; DGC's Acceptance fields), vGLP and Currencies told; the compiler-to-paper task (bare Request, view with key and tabs) running on vGLP-view.  GLP #12's task (20:18 UTC): simulated-time kernels start_clock/1, rated/2, step_clock/2 from GLP-Spec 5fd9a15, running on GLP-clock; Cloud #3 told GLP's ruling.
