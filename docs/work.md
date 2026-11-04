@@ -21,6 +21,8 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 
 ### Code #23, 2026-11-04
 
+- 20:31 UTC: GLP-clock merged, main 189a9c2e: start_clock/1, rated/2, step_clock/2 (GLP-Spec 5fd9a15), SimClock per GlpRuntime, block A33b, Dart test; GLP told.  Running: vGLP-view.  Waiting: GSC (sas form), vGLP (pragma gaps), Currencies (DGC's Acceptance), Cloud #2 (task 4).
+
 - 20:22 UTC: GSC-sas second spawn stopped: the settled form's bare constants cannot be refined to Constant under TGLP; Code recommends sas/6 with a Vars list and a 7-place form with a constraint (GSC told 20:2x UTC, Blocking: yes; draft reader diff kept in tmp/code23-briefs/).  vGLP #23's two tasks (20:08, 20:18 UTC): pragmas.sh's replacement rule done uncommitted on vGLP-pragmas2, stopped on two gaps (same-title own clause, GDC; DGC's Acceptance fields), vGLP and Currencies told; the compiler-to-paper task (bare Request, view with key and tabs) running on vGLP-view.  GLP #12's task (20:18 UTC): simulated-time kernels start_clock/1, rated/2, step_clock/2 from GLP-Spec 5fd9a15, running on GLP-clock; Cloud #3 told GLP's ruling.
 
 - 19:50 UTC: Cloud #3 (19:49 UTC): its comparison of the sGLP simulator with SpiFcp is on GLP branch Cloud-sglp, tools/cloud/sglp-vs-spifcp-2026-11-04.md (19ae1ae4), not for merging; finding, the slowing at 1,000 agents is the agent's known list walked per answer; a proposal for simulated time as a language extension is with GLP (GLP_inbox 2026-11-04); nothing of Code's to do until GLP answers.
