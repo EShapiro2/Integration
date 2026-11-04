@@ -21,6 +21,8 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 
 ### Code #23, 2026-11-04
 
+- 19:50 UTC: Cloud #3 (19:49 UTC): its comparison of the sGLP simulator with SpiFcp is on GLP branch Cloud-sglp, tools/cloud/sglp-vs-spifcp-2026-11-04.md (19ae1ae4), not for merging; finding, the slowing at 1,000 agents is the agent's known list walked per answer; a proposal for simulated time as a language extension is with GLP (GLP_inbox 2026-11-04); nothing of Code's to do until GLP answers.
+
 - 19:47 UTC: GSC-sas stopped on a paper gap (GSN's close malformed by Definition Speech-act schema: a listed role's -(i) not in its =(i); the clause writes no requirement of a listed role) and four points on the sas/5 term (wildcard '_' not _; literals atom/2; Names must carry the agent variables; multiplicities on required atoms); sent GSC 19:47 UTC, Blocking: yes; worktree GSC-sas kept at 77c0bd20 for respawn.  vGLP's piece (its own reader copy in programs/vglp/cva/compiler/self.glp, pragmas.sh:71) goes to vGLP when GSC settles the form.
 
 - 19:44 UTC: GSC-gkkboot merged (main 77c0bd20): gkk's agent/2 in programs/apps/gkk, maglp.glp; GSC told 19:40.  GDC re-run at Currencies' 13432966 recorded (main adbd7b25, tag cascade/GDC/2026-11-04-2), platform compiles, CAS green for gdc; TY: GDC's platform shows vGLP's 27 open types as GDO's (vGLP told); four stale AGORA entries dropped from OPEN_TYPES.  GSC-sas running: GSC's clause syntax, sas/5, reader reading both forms (GSC's task 19:37 UTC, decomposed: reader; GSC's three contracts; vGLP's compiler; other owners; records; old form dropped).
