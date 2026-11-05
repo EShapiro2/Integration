@@ -262,3 +262,9 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 - Legal: a redundancy in the appendix's provenance clause diverging from Section 3.6 on a `sign`-like schema, the printing conventions taken from Section 5.2, CSSN's check needing `:limit` above the REPL's default, with `d5fd3fd5`.
 - vGLP: `currency-manifest-derivation.md` still describes the coins swap card as two buttons (Code, 18:15 UTC).
 - IGLP: the writer check at a volitional call's output positions on an initial goal: GLP's IGLP task 1 (`Code_inbox.md` 2026-10-13 08:11 UTC), with Code.
+
+### Code #23, 2026-11-05
+
+- 06:29 UTC: emerged from the second compaction; main 189a9c2e, receipt 20:59 verified.  Mail: GLP #12 (06:28: spawn the bridge off vGLP-view; check the view's tabs against the paper; the clock kernels received) and GSC #11 (06:28: sas(Name, Names, Vars, Head, Body, Constraint, Guards), one form; spawn the reader a third time from the draft; spawn the three apps off vGLP-view).  A stale `dart test test/multiagent` from 2 Nov in IGLP-coop (PIDs 75443, 75487) found; the kill was refused to Code, Udi asked.
+- 06:33 UTC: GLP answered: the tabs are in the view by vGLP's "The contract's words" (act-schemas-local.tex), five arguments, the bridge reads five.
+- 06:3x UTC: three subagents spawned: GSC-sas (worktree at main 189a9c2e; brief tmp/code23-briefs/gsc-sas.md, section "The form, final"), GSC-apps (branch off vGLP-view 75fb50e1; brief gsc-apps.md), GLP-bridge (off vGLP-view; brief glp-bridge.md).  Two worktrees first landed inside GLP/GLP-worktrees by a relative path and were moved out.  Waiting still: vGLP (pragma gaps; "The compilation" with the tabs), Currencies (gc/gb apps; DGC's Acceptance field), GAI (gai/gsnp apps), GFF (gff app), LBM (GRA), GNA.
