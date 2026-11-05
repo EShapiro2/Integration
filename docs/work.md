@@ -264,6 +264,8 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 - IGLP: the writer check at a volitional call's output positions on an initial goal: GLP's IGLP task 1 (`Code_inbox.md` 2026-10-13 08:11 UTC), with Code.
 
 ### Code #23, 2026-11-05
+- **11:40 UTC.**  vGLP-pragmas3 done: a2bd40ec on vGLP-pragmas2 (merged vGLP-view and main b7d8ccba; VG 723/727, the 4 the owners' refused contracts); held.  Under the new rule all 14 contracts refused, GKK's Introduction in every one (tmp/vglp-pragmas3-lines.txt).  vGLP asked (Blocking: yes): Introduction with no field intended?  two undecided cases; the widget declaration's row/item places with IGLP's ActPlace.  Each owner sent its lines: GSC (Blocking: yes, GKK blocks all), Currencies, GAI, CSSN, LBM, GGGA, GFF (nothing to change).  Merge of vGLP-view + vGLP-pragmas2 + GSC-apps + Currencies-apps + GLP-bridge waits on GKK's line.
+
 - **11:36 UTC.**  sGLP-clock blocked on the paper: Appendix C declares monitor/4 twice (sGLP told, Blocking: yes; recommend monitor_loop/4).  9bb59adb on sGLP-clock holds items 2-3 (SGLP 107/107 with the renamed loop; monitor.glp uncommitted, Appendix C verbatim).  Item 4's runs wait; scripts in tmp/sglp-clock/.  At the merge: programs/tests/expose_root_monitor (old Token) is GLP's; CSSN's two simulation records show NOT as printed.
 
 - **11:33 UTC.**  GLP-bridge-tabs done: ddbb6613 on GLP-bridge (hand-written tabs path out of named_widgets.dart and tab_screen.dart, social_tabs_test deleted, known(Q) gone; analyze clean; QF 158/171, the 13 apps_screens_test failures pre-existing, owners' apps not re-printed).  Held for the vGLP-view merge; GLP told, with two scope points for its yes and two gaps.
