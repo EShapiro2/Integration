@@ -325,3 +325,4 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 - 17:50 UTC gsc-multiset merged, main db6293d4 pushed, test_gsc 526/526.  BCC: remove's forall Currencies'; eq of speech-act variables GSC's.
 - 18:26 UTC gsc-eqs merged, main 13a348c8 pushed, test_gsc 558/558.  Udi 18:10: Currencies' contracts first, the rest suspended, two more to come; merge-clean stopped, its section run incomplete; Code-merge carries it, plus pragmas.sh's names line; the push waits.  GDC, GCC, BCC grassroots; GCC's pragmas need vGLP's qschema and i1.
 - 18:44 UTC sGLP 18:43: tasks 1-2 briefed, tmp/code24-briefs/sglp-request.md, spawned after the merge; item 3's runs to Cloud after them.  GSC 18:44 confirms both readings.
+- 19:41 UTC Code-merge merged, main 5b08a1cd and tags pushed, merged worktrees removed, at Udi's word with the owners' reds.  Owners not yet told.  Handover in Code_inbox.md this time.  Code #25 next.
