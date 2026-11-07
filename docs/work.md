@@ -326,3 +326,9 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 - 18:26 UTC gsc-eqs merged, main 13a348c8 pushed, test_gsc 558/558.  Udi 18:10: Currencies' contracts first, the rest suspended, two more to come; merge-clean stopped, its section run incomplete; Code-merge carries it, plus pragmas.sh's names line; the push waits.  GDC, GCC, BCC grassroots; GCC's pragmas need vGLP's qschema and i1.
 - 18:44 UTC sGLP 18:43: tasks 1-2 briefed, tmp/code24-briefs/sglp-request.md, spawned after the merge; item 3's runs to Cloud after them.  GSC 18:44 confirms both readings.
 - 19:41 UTC Code-merge merged, main 5b08a1cd and tags pushed, merged worktrees removed, at Udi's word with the owners' reds.  Owners not yet told.  Handover in Code_inbox.md this time.  Code #25 next.
+
+### Code #25, 2026-11-07
+- 08:21 UTC Started on Udi's word; mail read from Code #24's handover.  Udi approved (08:2x): the Mac list in order; Cloud #3 takes GLP-rung4 and the sGLP paper's seed runs, the Mac the cost runs.
+- 08:26 UTC Owners told of main 5b08a1cd's reds by the nightly full suite at it (tmp/nightly-2026-11-07.txt: 7196, 6896 passed, 300 failed): vGLP, GAI, GFF, CSSN, sGLP, Currencies, GSG, GLP.  Cloud #3 tasked: GLP-rung4 (pushed at 18c3b2d0), then the seed runs after sGLP's items 1-2 are on main, branch Cloud-sglp-main.
+- 08:28 UTC GFF: six contracts not grassroots at 7b361c2f (tmp/code25/check-*.txt), sent to GFF; no platform compiled; cascade.sh row gff_fr_bc (602cbc9b); GFF-chooser, GFF-shots3 deleted local and origin.  Two corrections sent of my wrong cause sentences.
+- 08:34 UTC GSC: pragmas.sh takes GSG's definition and GSG:3 as they stand; GKK, GSG, GSN recorded 2026-11-07, main 8e808c07 pushed with tags; GSN's re-printed platforms e31f2140.  Running: GSC-words (brief tmp/code25/gsc-words.md), sGLP-request (brief tmp/code24-briefs/sglp-request.md).  27 merged worktrees removed; 20 remain (unmerged or dirty).
