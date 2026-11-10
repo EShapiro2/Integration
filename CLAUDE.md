@@ -39,6 +39,8 @@ Directory `/Users/udi/Grassroots/Code`; Claude project "Code"; remote `git@githu
 
 ## Cloud, Code's proxy in the cloud
 
+🔴 **EVERY CLOUD RUNS ON OPUS, AND CODE VERIFIES IT** (Udi, 2026-11-10, to Code #27: "only Opus, always"; "make sure this never happens again").  On 2026-11-09 Code #27 started Clouds #12 to #17 with the model claude-opus-5-5 given to the start, and all six came up on Fable: the cloud start does not apply the model it is given, and Code did not check.  So: a Cloud's start prompt tells it to name its model in its first mail; Code gives a new Cloud no task until that mail names Opus; every Cloud report ends `Model: <model id>` (`GLP/CLAUDE.md`, section Cloud, item 6), and a report without it, or naming another model, is not acted on: Code asks Udi in one line to switch that Cloud in its model menu.
+
 🔴 **Code pushes the Coordination repository after every mail it sends, always** (Udi, 2026-10-31, to Code #18: "push to cloud"; "always").  Cloud #1, a Claude Code session in a cloud container that Udi set up on 2026-10-31 as Code's proxy (clones of GLP and Coordination on GitHub, no Mac, no simulator, no full suite), reads its inbox, `Cloud_inbox.md`, from GitHub, so mail on disc reaches it only when pushed; `mail-send`'s own backup push can fail, and on 2026-10-31 a reply sat unpushed for half an hour.  Code tasks Cloud in `Cloud_inbox.md`, `To: Cloud`; Cloud works on a branch of its own, pushes it, and reports `To: Code`; Code merges, runs the suite on main, pushes and answers the owner.  Each stage of Cloud's work is approved by Udi through Code.
 
 ## No timed mail check
