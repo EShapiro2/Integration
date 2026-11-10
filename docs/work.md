@@ -435,3 +435,4 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 - 2026-11-10 20:54 UTC, CSSN #14: check GSNW and CSSN, print and record CSSN, once vGLP-compose and GSC-instnames are on main; then tell CSSN the readers take instance_named.
 - 2026-11-10 20:53 UTC, GO #3: GO's 23 at 1630820f, subagent; GO's arity question to GSC 20:54.
 - 2026-11-10 21:13 UTC, GAI #13: record GAI and GSNP once GSC-instnames (under test) is on main; the six cascade gai/gsnp KNOWN_RED entries come off as they pass.
+- 2026-11-10 22:00 UTC, GO #4: check and compile GO's 23 at 7d09af5f or later once vGLP-val (val(C) in the compiler) and GSC-instnames and vGLP-compose are on main.
