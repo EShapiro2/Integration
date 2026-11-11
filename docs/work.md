@@ -470,3 +470,6 @@ Started on Udi's word from `handover-2026-11-11.md` (Code #27).  The sections ab
 - In test: `GSC` e1202efe (Term and Terms renamed LinTerm and LinTerms), TY, GSC, CAS (tmp/code28/check-5.txt, base-5.txt).
 - Pull request 68 (Nimrod, glp_multiagent, a plain look): sent to GLP #15 to read against IGLP, 21:55 UTC.  Waiting on GLP.
 - Still Code's: raise cascade.sh's limit for the checker when GO's contracts get rows; pull request 64's test has no timeout (GSA #4's remark, with Udi).
+- 22:20 UTC `GSC` e1202efe merged, main 50d36b2e, pushed (TY, GSC, CAS: 956 of 956 on both trees; every record holds).  Pull request 68: GLP #15 and vGLP #26 found two faults; Nimrod told on the pull request; it merges once mended.
+- In test: `GLP` 5123f08e, the built-in type Term in the checker and the meet's fix, merged with main 50d36b2e in Code-check: every section (tmp/code28/check-6.txt), about two hours; then the failing sections on main alone, compare by name, merge, and send GLP each program the checker now refuses.
+- Currencies #18 and VMAT #5: started 21:40 UTC; no mail and no line in mail/sessions.md at 22:16 UTC; Udi asked to look at their models.
