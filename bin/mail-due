@@ -1,10 +1,13 @@
 #!/bin/bash
 # UserPromptSubmit hook of the Code session (Udi, 2026-10-19): when Code's last receipt in Code_inbox.md is more than two minutes old, it prints a line telling Code to read its mail before it answers Udi.  It prints nothing otherwise, and never blocks the prompt.
-inbox=/Users/udi/Grassroots/Coordination/mail/Code_inbox.md
+# From 2026-11-11 the mail is the branch mail of GLP, checked out at the worktree below; it is brought to the remote's state first, as every mail command does, since nothing else delivers it to the Mac.
+mail=/Users/udi/Grassroots/GLP-worktrees/mail
+inbox=$mail/mail/Code_inbox.md
 cat > /dev/null
+git -C "$mail" fetch -q origin mail >/dev/null 2>&1 && git -C "$mail" reset -q --hard FETCH_HEAD >/dev/null 2>&1
 last=$(grep -E '^Read: Code #[0-9]+ [0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2} UTC$' "$inbox" 2>/dev/null | tail -1)
 if [ -z "$last" ]; then
-  echo "Code: Code_inbox.md has no receipt of Code's.  Before you answer Udi, read your mail: /Users/udi/Grassroots/Coordination/bin/mail-read Code \"Code #N\", your own name, and act on it."
+  echo "Code: Code_inbox.md has no receipt of Code's.  Before you answer Udi, read your mail: bash /Users/udi/Grassroots/GLP-worktrees/mail/bin/mail-read Code \"Code #N\" > a file, your own name, and act on it."
   exit 0
 fi
 who=$(printf '%s\n' "$last" | sed -E 's/^Read: (Code #[0-9]+) .*$/\1/')
@@ -12,7 +15,7 @@ ts=$(printf '%s\n' "$last" | sed -E 's/^Read: Code #[0-9]+ ([0-9-]+ [0-9:]+) UTC
 then_s=$(date -j -u -f '%Y-%m-%d %H:%M:%S' "$ts:00" +%s 2>/dev/null) || exit 0
 now_s=$(date -u +%s)
 if [ $((now_s - then_s)) -gt 120 ]; then
-  echo "Code: the last receipt in Code_inbox.md is $who's at $ts UTC, more than two minutes ago.  Before you answer Udi, read your mail: /Users/udi/Grassroots/Coordination/bin/mail-read Code \"Code #N\", your own name, and act on it."
+  echo "Code: the last receipt in Code_inbox.md is $who's at $ts UTC, more than two minutes ago.  Before you answer Udi, read your mail: bash /Users/udi/Grassroots/GLP-worktrees/mail/bin/mail-read Code \"Code #N\" > a file, your own name, and act on it."
 fi
 # Every entry addressed to Code since the ledger's cutoff must be in Code/docs/mail-ledger.txt, put there by bin/mail-ack once acted on; any other is named here, so an entry a read cut off is never lost (Code #22, 2026-11-03; Udi: "what can we do so this NEVER happens again?").
 ledger=/Users/udi/Grassroots/Code/docs/mail-ledger.txt
