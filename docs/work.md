@@ -436,3 +436,27 @@ Open only; a merged or rejected item leaves the list, git holding it.  Rewritten
 - 2026-11-10 20:53 UTC, GO #3: GO's 23 at 1630820f, subagent; GO's arity question to GSC 20:54.
 - 2026-11-10 21:13 UTC, GAI #13: record GAI and GSNP once GSC-instnames (under test) is on main; the six cascade gai/gsnp KNOWN_RED entries come off as they pass.
 - 2026-11-10 22:00 UTC, GO #4: check and compile GO's 23 at 7d09af5f or later once vGLP-val (val(C) in the compiler) and GSC-instnames and vGLP-compose are on main.
+
+### Code #28, from 2026-11-11 20:30 UTC --- the open list
+
+Started on Udi's word from `handover-2026-11-11.md` (Code #27).  The sections above were not kept from 2026-11-09 and are not re-verified; this section is the open list, the mail deciding where the two differ.
+
+- sGLP (`Code_inbox.md` 2026-11-11 20:14 and 20:24 UTC), branch `sGLP` 9c71459c: the draw typed and transform.glp moved; Sections SGLP, TY, QD; unblocks pull request 60.  In test, merged with main in `GLP-worktrees/Code-check`.
+- Code's own (the same entry, item 4), branch `Code-sglp-loop` 7d22304f: Section SGLP's loop takes both depths of `simulation/`.  In test.  CSSN's eight records are then checked, and fail until CSSN #15 re-records them.
+- GSA (20:23 UTC), branch `GSA` da5298dc, GDS.txt; and 9c1f67cc, GAS.txt, not yet tasked.  In test; then check GDS, and record it when GnW's openers allow.
+- Pull request 64 (Nimrod, networking, a LAN cold call): GSA #4 read it against GNA: merge.  In test, Section NET.
+- Pull request 66 (Dan, networking, a certificate's UTCTime): sent to GSA #4 to read against GNA, 20:37 UTC.  Waiting on GSA.
+- GO (20:28 and 20:29 UTC): check the 23 contracts at main 012bbde0 and run the compiler; all 23 once `vGLP-opener` is merged.  Running, `tmp/code28/go/run.txt`.
+- GLP (20:28 UTC): a VMAT Cloud, VMAT #5, no handover in VMAT's repository.  Waiting on Udi's go.
+- Currencies Cloud, Currencies #18, handover `GB/docs/handover-2026-11-09.md`.  Waiting on Udi's go.
+- GAI #14: started, idle, no mail and no line in `mail/sessions.md`.  Udi asked to look at its model.
+- sGLP's question on the type of a term held as data (20:30 UTC): forwarded to GLP, 20:34 UTC.  Waiting on GLP.
+- `vGLP-opener` (22ff6af6): vGLP #26 says when it is ready to merge (20:35 UTC).  GAI, GSNP, CSSN, GSV, GRV and GAS compile no platform until then.
+- `GSC` (3046fc18): GSC #16 tasks the merge when its tests end (20:36 UTC); tell GLP #15 then, the branch changing a type of the root `self.glp`.
+- `Cloud-versions` (7b2d92f7) and `Cloud-serverclone` (11b97043), GSA's: held until after the two-phone play.
+- Pull request 59 (Dan, phones/tools build.sh): held until the iPhone build is played.  Pull request 60 (Ohad, GDO simulations): held on sGLP's branch and on fresh records.  Pull request 61 (Nimrod, LWG): held on Udi's ruling of the contract's owner and name.
+- The phones: GrassApp-debug-33556709.ipa built; waits for both iPhones on USB, unlocked (`GLP/phones/docs/handover-2026-11-11.md`).
+- Asked of Udi by Code #27, not answered: the token `/etc/glp/github-papers-token`; the 13 foundational papers' repositories on the server's read token; archiving the ended cloud sessions.
+- CSSN: its cascade record and eight simulation records to re-record once vGLP's opener is in (CSSN #15, 20:00 UTC).
+- Code's own, not started: `papers/Code/README.md` on main of GLP; Grassroots-Audit, no report posted yet; the remote branches not merged into main (32 at 20:37 UTC) and the 35 worktrees, to check and delete; typing all code until `test/OPEN_TYPES` is empty.
+- Done: Appendix B's mentions in Code's files repointed to `servers/peoplesweb/tools/directories.py` (GLP 6673941a, Code ae09722), GSC and GSA told of theirs; `Cloud-handover-Runtime` merged (GLP 54d85be0).
