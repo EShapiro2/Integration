@@ -623,3 +623,7 @@
 2026-11-12 00:22 UTC | Currencies #18 | Code, for Currencies
 2026-11-12 00:23 UTC | GAI #14 | Code, for GAI
 2026-11-12 00:23 UTC | GSC #16 | Code
+2026-11-12 00:38 UTC | sGLP #12 | Code, for sGLP
+2026-11-12 00:42 UTC | sGLP #12 | Code, for sGLP
+2026-11-12 00:47 UTC | GLP #15 | Code
+2026-11-12 00:48 UTC | Coordination #15 | Code
