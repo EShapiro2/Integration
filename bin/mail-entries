@@ -1,7 +1,7 @@
 #!/bin/bash
 # Lists the entries addressed to Code in Code_inbox.md, one per line, "<Date> | <From> | <To>", from the cutoff on, Code's own entries left out (Code #22, 2026-11-03, after missing GNA's task O by reading mail through tail; Udi: "what can we do so this NEVER happens again?").
 # From 2026-11-11 the mail is the branch mail of GLP, the worktree below (Udi, 2026-11-11); the cutoff is its start.
-inbox=/Users/udi/Grassroots/GLP-worktrees/mail/mail/Code_inbox.md
+inbox=/Users/udi/Grassroots/Mail/mail/Code_inbox.md
 cutoff="${1:-2026-11-11 17:00}"
 awk -v cut="$cutoff" '
 /^From: /{from=substr($0,7); to=""; next}
