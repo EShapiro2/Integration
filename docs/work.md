@@ -585,3 +585,4 @@ Started on Udi's word from `handover-2026-11-12.md` (Code #28).  What waits is t
 ## Code #30, from 2026-11-13 20:27 UTC
 
 - 20:37 UTC Started on Udi's word, main 98ca7d4c, mail read from Code #29's handover, none new.  Watch: tmp/code30/watch-once.sh.  Udi: only Coordination, Audit, Website and Calculus start now; he works with Calculus on its paper before any other project starts.  Requested as Clouds on EShapiro2/GLP: Calculus #2 (task_15a68264), Coordination #16 (task_268d5491), Audit #2; Website #2 after the three name their model.
+- 20:38 UTC Calculus #2 started, session_013FJ398ceXFjpD4heVzTYia, on claude-fable-5-2: it does no work.  Code cannot switch it (set_session_model: session not found); asked of Udi.  Coordination #16 and Audit #2 not yet reported.
