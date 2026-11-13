@@ -588,3 +588,5 @@ Started on Udi's word from `handover-2026-11-12.md` (Code #28).  What waits is t
 - 20:38 UTC Calculus #2 started, session_013FJ398ceXFjpD4heVzTYia, on claude-fable-5-2: it does no work.  Code cannot switch it (set_session_model: session not found); asked of Udi.  Coordination #16 and Audit #2 not yet reported.
 - 20:44 UTC Audit #2 (session_013FJ396EcQesMYoyzWsvJU2) also on Fable.  Udi: "Let them run on Fable"; mailed Calculus, Audit, Coordination (20:44 UTC) and nudged the three by SendMessage.  Website #2 requested, its brief allowing Fable.  Coordination #16 has not recorded its session.
 - 20:45 UTC Website #2 started, session_013FJ398CzUEQ5r1JjczVcLr, on Fable; its environment cannot reach peoplesweb.org (403 from the proxy), put to Udi by it.
+
+- 2026-11-13 21:55 UTC: Calculus #2 (mail 21:53 UTC, Blocking) asked for the literature in the Mac tmp.  Created the private repository EShapiro2/Grassroots-Sources, clone /Users/udi/Grassroots/Sources, main a619f42: 16 PDFs in sources/ and the list of tmp PDFs; answered in Calculus_inbox.md and nudged.
