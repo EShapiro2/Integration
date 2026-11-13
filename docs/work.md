@@ -590,3 +590,5 @@ Started on Udi's word from `handover-2026-11-12.md` (Code #28).  What waits is t
 - 20:45 UTC Website #2 started, session_013FJ398CzUEQ5r1JjczVcLr, on Fable; its environment cannot reach peoplesweb.org (403 from the proxy), put to Udi by it.
 
 - 2026-11-13 21:55 UTC: Calculus #2 (mail 21:53 UTC, Blocking) asked for the literature in the Mac tmp.  Created the private repository EShapiro2/Grassroots-Sources, clone /Users/udi/Grassroots/Sources, main a619f42: 16 PDFs in sources/ and the list of tmp PDFs; answered in Calculus_inbox.md and nudged.
+
+- 2026-11-13 22:19 UTC: Calculus #2 (mail 22:16 UTC) named eight papers.  Fetched two (Cervesato et al. CSFW 1999; Bonner and Kifer 1998) into Grassroots-Sources f59fd3e; the six at ACM, ScienceDirect and Project Euclid return no PDF to the shell; asked Udi to download them into tmp.
