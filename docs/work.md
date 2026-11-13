@@ -598,3 +598,5 @@ Started on Udi's word from `handover-2026-11-12.md` (Code #28).  What waits is t
 - 2026-11-13 22:33 UTC: Calculus #2 (mail 22:32 UTC) asked for five Petri-net sources.  None fetched: the Hamburg server returns 503, the publishers give the shell no PDF; links given to Udi to download into tmp.
 
 - 2026-11-13 22:59 UTC: Udi downloaded three Petri-net papers; added to Grassroots-Sources 1b5c9d2 (Murata 1989; Genrich and Lautenbach 1981; Montanari and Rossi, authors manuscript, not the journal copy).  Petri 1962/1966: the Hamburg server fails for Udi too.  Reisig: no address.  Calculus #2 told and nudged.
+
+- 2026-11-13 23:04 UTC: Petri, Communication with Automata (1966), fetched from the Hamburg informatics page, in Grassroots-Sources 8e0e425; Calculus #2 told.  Not had: the German dissertation (edoc server down), the journal copy of Montanari and Rossi, Reisig (Springer).
