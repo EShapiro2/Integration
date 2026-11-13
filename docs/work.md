@@ -581,3 +581,7 @@ Started on Udi's word from `handover-2026-11-12.md` (Code #28).  What waits is t
   (Its first line says 20:07 UTC; it was sent at 20:01 UTC, the Date line.)
 - 20:03 UTC All fifteen Clouds reported their handovers and stopped, nothing unpushed (Code_inbox.md 20:01-20:02 UTC): Coordination, vGLP, VMAT, Calculus, Audit, Website, GFF (handover in GFF_inbox.md), CSSN, GO, GAI, sGLP, GSC, Currencies, GSA, GLP.  Website's handover branch 2b5a34d0 merged, main 98ca7d4c.  For the next sessions: Coordination #15 did not record the rule on who starts sessions, leaving it to Coordination #16; Audit #1 left two findings of the auditors' 17cde7e unmailed (GB.glp.md 1 to Currencies, agent.glp.md 1 to GSA).
 - 20:16 UTC The sweep of 20:11 UTC on 3a56dfd5: https://peoplesweb.org/papers/GGGA.pdf answers 404, SRC.pdf 200; the branch papers holds 27 PDFs, GGGA.pdf not among them.  Done; Website #1 has stopped, so its successor reads it here.  Item 2 of Code #29's handover is done.
+
+## Code #30, from 2026-11-13 20:27 UTC
+
+- 20:37 UTC Started on Udi's word, main 98ca7d4c, mail read from Code #29's handover, none new.  Watch: tmp/code30/watch-once.sh.  Udi: only Coordination, Audit, Website and Calculus start now; he works with Calculus on its paper before any other project starts.  Requested as Clouds on EShapiro2/GLP: Calculus #2 (task_15a68264), Coordination #16 (task_268d5491), Audit #2; Website #2 after the three name their model.
