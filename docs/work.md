@@ -828,3 +828,10 @@ Started on Udi's word from `handover-2026-11-12.md` (Code #28).  What waits is t
 - Held: Calculus-3 d15a5308, NAMES.txt of five columns, until Website's names_tree.py reads five; Website #3 waits on Udi's word (asked 21:42 UTC), and for the sweep, which reads the closed branch Calculus and shows 73 contracts, seven twice.  Udi asked at 22:25 UTC.
 - With the papers' owners and Udi: Definition Binding, two declared names two persons, variables included (GSC #19's proposal; vGLP #30 and Calculus #8 agree; GDO-L:3's Labeled unpoint on a friend's own pointer, GFF #6).
 - Open: the Calculus's assembled files and the renamed publication with adopt.py; then the branch names.
+
+### 2026-11-16 23:30 to 2026-11-17 00:00 UTC (Code #33)
+
+- **The branch `names`**, GLP 15c596c4, off main c9ccd321 with Calculus-names 00a49c6f (Calculus code ee7ccc55) merged: every contract's files and record directory renamed by calculus/NAMES.txt (scripts /home/user/tmp/rename.sh, adopt3.sh; the Calculus's texts copied from calculus/next/<file>/ to calculus/<file>/, untracked and excluded); all 66 adopted, adopt.py --check 0 (each by its name with spaces); cascade.sh's rows the new atoms, old keys dropped; programs/apps/compile.sh; tools/names_left.py (382 lines left at the start: Code 88, GSC 80, sGLP 46, vGLP 27, GO 23, CSSN 21, GLP 20, GFF 20, GAI 18, ...).
+- Owners tasked at 23:53 UTC to mend their lines on <Project>-names off origin/names: GSC, vGLP, CSSN (#17 stopped; #18 to be started), GLP, GFF, GAI, GSA, sGLP, GO, Currencies, GGGA.
+- The printing of the 66 on ten helpers, branches helper-N/code-names: #1 #2 #3 #5 #6 #9 #11 #12 three of GO's each; #8 and #10 21 each, #10 the composition groups coins.
+- Code's own lines still to mend: test/run_all_tests.sh outside the owners' blocks, tools/, cascade.sh's comments.
