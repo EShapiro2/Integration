@@ -842,3 +842,11 @@ Started on Udi's word from `handover-2026-11-12.md` (Code #28).  What waits is t
 - **Records**: 66 of 67 printed (Children out), helpers' branches helper-N/code-names merged by /home/user/tmp/mergenames.sh; the copies of the adopted files renewed (a07e6e03), adopt.py --check 0 for the 66; each record's cascade.sh --check clean: 41 quick, the composition Groups+Coins (reprinted once, % lines) and 24 slow.
 - **Suite on names**: VG 1296/1296 (c7aea345); TY N3 SG APPS 540/540 and test_gsc 741/741 (800d9b23); QD 2940/2940, APPS 249/249, QF the Mac's three only after GLP-names2; the Mac's seven pass on 9626d1d6; SGLP's own 103.  Running: the fast tier and CAS (Helper #8).
 - Still to do at the merge: tags cascade/<new name>/<date> by the Mac; the simulator screens; Website (names_tree.py and build.py of five columns, about.json's keys, /next on names; waits on Udi's word to Website #3); simulations' names stay.
+
+### THE NIGHTLY of 2026-11-17 on main c9ccd321 (Code #33; on the twelve helpers, the Mac's part by Mac #1 by hand)
+
+- Totals, the sections run through the suite: 8415 checks, 8376 passed, 39 failed.  By part: B to GF (26 older sections) 1150/1150; TY GSC CALC 796/796 (TY 2, GSC 741, CALC 53); APPS SG K 528/528 (K 134, SG 145, APPS 249); VG QD A 4603/4603 (A 373, VG 1296, QD 2934); QF NET DL 1129/1136; SGLP 170/202.
+- Section CAS by its rows, cascade.sh R --check: 67 of 67 clean (66 records and the composition), no line NOT as printed.
+- Failed by section: QF 3 and NET 4, the seven only the Mac can run, which pass on the Mac (Mac #1, 02:08 UTC: glp_multiagent 16 tests exit 0, networking 15 exit 0); SGLP 32, CSSN's eight simulation records, four checks each, the known 32.
+- New against the night before: no new failed check.  Two faults of the tooling: (1) Section CALC's tests left calculus/tests/noact/sasx-all/ untracked, so the suite marked its run invalid with every check passed; sent to Calculus, mended on names (bff6f3cf).  (2) The Mac's cron run of test/nightly.sh failed at its pull, no key agent under cron; Mac #1 ran it by hand; its mend, mac-1/code-nightly 575b736c, waits on Udi's yes (it gives the cron job the login session's key agent).
+- Also found tonight, on names, not on tonight's main count: Section CAS in the suite named its rows by hand and skipped a row with no record in silence; mended on names (e95c13ea).
