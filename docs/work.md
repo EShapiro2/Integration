@@ -858,3 +858,10 @@ Started on Udi's word from `handover-2026-11-12.md` (Code #28).  What waits is t
 - The records, cascade.sh R --check on fe8093e0: 66 of 66 and the composition Groups+Coins clean.
 - names 3b2a5fe7 then takes main 54db9c79 by a clean merge (one file, test/nightly.sh).
 - The merge of names to main waits on Udi's look at /next: Website-names, the site's new layout, goes live with it, and Udi told Website "i want to confirm their layout on /test before making them live".
+
+### THE RENAMING IS ON MAIN, GLP 24318f2c, 2026-11-17 ~09:30 UTC (Code #33)
+
+- Udi's yes to Code #33 ("yes", to "Do you approve merging names to main now, new layout included?").  Merge of names 58c563a8; the tree equals names.  to_all mailed and fourteen sessions nudged.
+- Mac #1 tasked: the tags cascade/<directory>/2026-11-17 for the 67 records on 24318f2c; the simulator's screens on mac-1/names-screens; tonight's nightly by cron.
+- The nightly's stored prompt (trig_01AP67cJhkLhEzLe6pXYoDnN) rewritten with the new rows.
+- Open: the worktree and branch names to remove when the Mac's tags are in; the papers, at their owners' next tasks; Definition Binding (GSC's proposal to Udi); GSA and Currencies, the contract/2 export (audit Finding 1); vGLP's fixture for the two-roles rule; the branch Calculus of GLP, closed, still on the remote.
