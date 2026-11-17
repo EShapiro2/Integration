@@ -835,3 +835,10 @@ Started on Udi's word from `handover-2026-11-12.md` (Code #28).  What waits is t
 - Owners tasked at 23:53 UTC to mend their lines on <Project>-names off origin/names: GSC, vGLP, CSSN (#17 stopped; #18 to be started), GLP, GFF, GAI, GSA, sGLP, GO, Currencies, GGGA.
 - The printing of the 66 on ten helpers, branches helper-N/code-names: #1 #2 #3 #5 #6 #9 #11 #12 three of GO's each; #8 and #10 21 each, #10 the composition groups coins.
 - Code's own lines still to mend: test/run_all_tests.sh outside the owners' blocks, tools/, cascade.sh's comments.
+
+### 2026-11-17 00:00 to 01:55 UTC (Code #33)
+
+- **The branch `names` at 9626d1d6**: merged into it the owners' parts GGGA, Currencies, GLP (twice: lines, then look.dart's reading of the title line), GO, GSC, GSA (with GNA's), GAI, GFF, sGLP, vGLP, and the Calculus's mend of adopt.py for a file name with a hyphen (38669810; every two-word row had failed at once).  Out: CSSN (#17 stopped; its compile.sh reads CSSN.glp; #18 to be started on Udi's "Start").
+- **Records**: 66 of 67 printed (Children out), helpers' branches helper-N/code-names merged by /home/user/tmp/mergenames.sh; the copies of the adopted files renewed (a07e6e03), adopt.py --check 0 for the 66; each record's cascade.sh --check clean: 41 quick, the composition Groups+Coins (reprinted once, % lines) and 24 slow.
+- **Suite on names**: VG 1296/1296 (c7aea345); TY N3 SG APPS 540/540 and test_gsc 741/741 (800d9b23); QD 2940/2940, APPS 249/249, QF the Mac's three only after GLP-names2; the Mac's seven pass on 9626d1d6; SGLP's own 103.  Running: the fast tier and CAS (Helper #8).
+- Still to do at the merge: tags cascade/<new name>/<date> by the Mac; the simulator screens; Website (names_tree.py and build.py of five columns, about.json's keys, /next on names; waits on Udi's word to Website #3); simulations' names stay.
