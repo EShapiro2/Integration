@@ -865,3 +865,4 @@ Started on Udi's word from `handover-2026-11-12.md` (Code #28).  What waits is t
 - Mac #1 tasked: the tags cascade/<directory>/2026-11-17 for the 67 records on 24318f2c; the simulator's screens on mac-1/names-screens; tonight's nightly by cron.
 - The nightly's stored prompt (trig_01AP67cJhkLhEzLe6pXYoDnN) rewritten with the new rows.
 - Open: the worktree and branch names to remove when the Mac's tags are in; the papers, at their owners' next tasks; Definition Binding (GSC's proposal to Udi); GSA and Currencies, the contract/2 export (audit Finding 1); vGLP's fixture for the two-roles rule; the branch Calculus of GLP, closed, still on the remote.
+- **Requested 2026-11-17 11:08 UTC, Website #3, for GLP** (forwarded to GLP #16 at 11:10): an agent startable from a kept compiled program, compiling nothing (agent_runtime.dart, initialize and _setUp); unblocks the site compiling each app once at the sweep (Udi's yes to Website).  Waits on GLP's reading of its paper.
