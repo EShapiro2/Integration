@@ -1,0 +1,66 @@
+Knowledge|Knowledge
+Friendship|Friendship
+Secure Friendship|Secure-Friendship
+Distrust|Distrust
+Separating Distrust|Separating-Distrust
+Forwarding|Forwarding
+Encounters|Encounters
+Guardians|Guardians
+Groups|Groups
+Warded Groups|Warded-Groups
+Provenance Groups|Provenance-Groups
+Children|Children
+Agents|Agents
+Services|Services
+Rendezvous|Rendezvous
+Directory|Directory
+Programs|Programs
+AppStore|AppStore
+App|App
+Overlay|Overlay
+Labelled Overlay|Labelled-Overlay
+Local Overlay|Local-Overlay
+Feeds|Feeds
+Short Feeds|Short-Feeds
+Resilient Feeds|Resilient-Feeds
+Backchannel Feeds|Backchannel-Feeds
+Auction|Auction
+Second-Score Auction|Second-Score-Auction
+Rides|Rides
+Denominated Coins|Denominated-Coins
+Denominated Currencies|Denominated-Currencies
+Joint Accounts|Joint-Accounts
+Stays|Stays
+Library|Library
+Recommendations|Recommendations
+Funded DAO|Funded-DAO
+Liquid DAO|Liquid-DAO
+Organisation|Organisation
+Constitution|Constitution
+Networked Organisation|Networked-Organisation
+Bank|Bank
+Community Bank|Community-Bank
+Commercial Bank|Commercial-Bank
+Central Bank|Central-Bank
+Mutual Credit|Mutual-Credit
+Community Currency|Community-Currency
+Backed Currency|Backed-Currency
+Corporation|Corporation
+Shareholding Corporation|Shareholding-Corporation
+Single-Person Company|Single-Person-Company
+Trading Company|Trading-Company
+Cooperative|Cooperative
+Workers' Cooperative|Workers-Cooperative
+Consumers' Cooperative|Consumers-Cooperative
+Cooperative DAO|Cooperative-DAO
+Liquid Cooperative|Liquid-Cooperative
+Ads|Ads
+Gigs|Gigs
+Lodging|Lodging
+Marketplace|Marketplace
+Notes|Notes
+Coins|Coins
+Bonds|Bonds
+Shares|Shares
+Agora|Agora
+DAO|DAO
