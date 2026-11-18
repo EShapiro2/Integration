@@ -12,6 +12,6 @@ cp $D/$F.txt $R/; cp $C/term.glp.txt $R/$F.glp
 for f in schemas.txt full-contract.txt full-pragmas.txt full-schemas.txt flat.txt relations.txt; do cp $C/$f $R/; done
 echo "$VT" > $R/verdict.txt
 { echo "# cascade/$F: the contract checked, nothing compiled"; echo ""
-  echo "$F.glp and the printed files are the Calculus's, calculus/contracts/$F/ at GLP $(git rev-parse --short=8 HEAD): calculus/tools/adopt.py does not expand its first line, which instantiates with no binding, so the full contract shows its own text alone."
+  echo "$F.glp and the printed files are the Calculus's, calculus/contracts/$F/ at GLP $(git rev-parse --short=8 HEAD): on this branch, off main, calculus/tools/adopt.py prints value variables bare, without the const batch's const(X), so the record is the Calculus's printing."
   echo "The verdict, by programs/gsc's check/2 on that term: \`$VT\`.  No VMAT form, platform or run: the contract is not compiled."; } > $R/manifest.md
 echo "$F: $VT"; rm -rf $W
